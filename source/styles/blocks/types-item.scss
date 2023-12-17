@@ -1,0 +1,30 @@
+.types-item__title {
+  @extend %reset;
+  color: var(--special_dark-grey-2, #222222);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.types-item__text {
+  @extend %reset;
+  color: var(--special_dark-grey, #444444);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.types-item__title--more {
+  @extend %reset;
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

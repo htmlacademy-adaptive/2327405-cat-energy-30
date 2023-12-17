@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/styles.css">
   <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
-    <a class="main-header__link" href="#">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="images/icons/logo-desctop.svg">
-        <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg">
-      <img class="main-header__image" src="images/icons/logo-mobile.svg" width="33px" height="38px" alt="Логотип сайта Cat Energy">
-    </picture>
-    </a>
+    <div class="main-header__catalog header-catalog">
+      <a class="main-header__link" href="#">
+        <picture>
+          <!-- <source media="(min-width: 1200px)" srcset="images/icons/logo-desctop.svg">
+        <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg"> -->
+          <img class="main-header__image" src="images/icons/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
+      <a class="main-header__link" href="#">
+        <picture>
+          <!-- <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
+        <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg"> -->
+          <img class="main-header__image" src="images/icons/footer-logo.svg" width="101" height="18"
+            alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
+      <a class="main-header__link" href="#">
+        <picture>
+          <!-- <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
+        <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg"> -->
+          <img class="main-header__image" src="images/icons/tab_mobile.svg" width="24" height="24"
+            alt="Открыть вкладку">
+        </picture>
+      </a>
+    </div>
     <nav class="main-header__navigation header-navigation">
       <ul class="header-navigation__list navigation">
         <li class="navigation__item">
@@ -38,42 +57,66 @@
         <fieldset class="filter__form-part form-part">
           <legend class="form-part__legend form-part__legend--small">Заполните анкету, и мы подберем
             программу питания для вашего кота</legend>
-          <label class="form-part__label">
-            ИМЯ:*
-            <input type="text" class="form-part__input" placeholder="барсик" name="cat name" required>
-          </label>
-          <label class="form-part__label">
-            Вес (кг):*
-            <input type="text" class="form-part__input" placeholder="7" name="cat weight" required>
-          </label>
-          <label class="form-part__label">
-            Возраст (лет):
-            <input type="text" class="form-part__input" placeholder="7" name="cat age" required>
-          </label>
-          <label class="form-part__label">
-            <input type="radio" class="form-part__input" name="chose plan" value="slim" checked>
-            похудение
-          </label>
-          <label class="form-part__label">
-            <input type="radio" class="form-part__input" name="chose plan" value="weight gain">
-            Набор массы
-          </label>
-          <label class="form-part__label">
-            <input type="radio" class="form-part__input" name="chose plan" value="advice">
-            Не знаю (Нужен ваш совет)
-          </label>
+          <ul class="form-part__list form-part-list">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                Имя:*
+                <input type="text" class="form-part-list__input" placeholder="барсик" name="cat name" required>
+              </label>
+            </li>
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                Вес (кг):*
+                <input type="text" class="form-part-list__input" placeholder="7" name="cat weight" required>
+              </label>
+            </li>
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                Возраст (лет):
+                <input type="text" class="form-part-list__input" placeholder="7" name="cat age" required>
+              </label>
+            </li>
+          </ul>
+          <ul class="form-part__list form-part-list">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="radio" class="form-part-list__input" name="chose plan" value="slim" checked>
+                похудение
+              </label>
+            </li>
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="radio" class="form-part-list__input" name="chose plan" value="weight gain">
+                Набор массы
+              </label>
+            </li>
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="radio" class="form-part-list__input" name="chose plan" value="advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="filter__form-part form-part">
           <legend class="form-part__legend">Контактные данные
             (владельца кота)</legend>
-          <label class="form-part__label">
-            E-mail:*
-            <input type="email" class="form-part__input" placeholder="kuklachev@gmail.com" name="your email" required>
-          </label>
-          <label class="form-part__label">
-            Телефон:*
-          <input type="tel" class="form-part__input" placeholder="8 (960) 900-60-90" name="your tel" required>
-          </label>
+          <ul class="form-part__list form-part-list">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                E-mail:*
+                <input type="email" class="form-part-list__input" placeholder="kuklachev@gmail.com" name="your email"
+                  required>
+              </label>
+            </li>
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                Телефон:*
+                <input type="tel" class="form-part-list__input" placeholder="8 (960) 900-60-90" name="your tel"
+                  required>
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="filter__form-part form-part">
           <legend class="form-part__legend">Расскажите обо всех повАдках кота</legend>
@@ -83,35 +126,35 @@
         </fieldset>
         <fieldset class="filter__form-part form-part">
           <legend class="form-part__legend">Дополнительно</legend>
-          <ul class="form-part__list more">
-            <li class="more__item">
-              <label class="more__label">
+          <ul class="form-part__list form-part-list">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="checkbox" class="form-part-list__input" name="no-sugar">
                 сахарозаменитель
-                <input type="checkbox" class="more__input" name="no-sugar">
               </label>
             </li>
-            <li class="more__item">
-              <label class="more__label">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="checkbox" class="form-part-list__input" name="water">
                 питьевая вода
-                <input type="checkbox" class="more__input" name="water">
               </label>
             </li>
-            <li class="more__item">
-              <label class="more__label">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="checkbox" class="form-part-list__input" name="milk">
                 молоко
-                <input type="checkbox" class="more__input" name="milk">
               </label>
             </li>
-            <li class="more__item">
-              <label class="more__label">
+            <li class="form-part-list__item">
+              <label class="form-part-list__label">
+                <input type="checkbox" class="form-part-list__input" name="vitamins">
                 витамины
-                <input type="checkbox" class="more__input" name="vitamins">
               </label>
             </li>
           </ul>
         </fieldset>
         <button type="submit" class="filter__button green-button">отправить заявку</button>
-          <p class="filter__text">* — Обязательные поля</p>
+        <p class="filter__text">* — Обязательные поля</p>
       </form>
     </section>
   </main>
@@ -119,7 +162,7 @@
     <section class="main-footer__invitation footer-invitation">
       <h2 class="visually-hidden">Контактный адрес</h2>
       <div class="footer-invitation__container contacts-container">
-        <p class="contacts-container__text contacts-container__text--big">приглашаем
+        <p class="contacts-container__text contacts-container__text--big">приглашаем<br>
           к сотрудничеству
           дилеров!</p>
         <p class="contacts-container__text">ул. Большая
@@ -128,29 +171,33 @@
           Санкт-Петербург</p>
       </div>
       <picture>
-        <source width="1440" height="400"  type="image/png" media="(min-width: 1200px)" src="images/map-desktop@1x.png 1x" srcset="images/map-desktop@2x.png 2x">
-        <source width="768" height="400"  type="image/png" media="(min-width: 768px)" src="images/map-tablet@1x.png 1x" srcset="images/map-tablet@2x.png 2x">
-      <img class="footer-invitation__image" src="images/map-mobile@1x.png 1x" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте">
-    </picture>
+        <!-- <source width="1440" height="400" type="image/png" media="(min-width: 1200px)"
+          src="images/map-desktop@1x.png 1x" srcset="images/map-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" src="images/map-tablet@1x.png 1x"
+          srcset="images/map-tablet@2x.png 2x"> -->
+        <img class="footer-invitation__image" src="images/map-mobile@1x.png " srcset="images/map-mobile@2x.png "
+          width="320" height="362" alt="Расположение на карте">
+      </picture>
     </section>
     <section class="main-footer__messengers main-footer-messengers">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="main-footer-messengers__container main-footer-container">
-        <img class="main-footer-container__logo" src="images/icons/footer-logo.svg" width="128" height="24" alt="Логотип сайта">
-        <ul class="main-footer-container__list messangers-list">
-          <li class="messangers-list__item">
-            <a class="messangers-list__link" href="#">
-              <img class="messangers-list__image" src="images/icons/vk.svg" width="28" height="22" alt="VK">
+        <img class="main-footer-container__logo" src="images/icons/footer-logo.svg" width="128" height="24"
+          alt="Логотип сайта">
+        <ul class="main-footer-container__list messengers-list">
+          <li class="messengers-list__item">
+            <a class="messengers-list__link" href="#">
+              <img class="messengers-list__image" src="images/icons/vk.svg" width="28" height="22" alt="VK">
             </a>
           </li>
-          <li class="messangers-list__item">
-            <a class="messangers-list__link" href="#">
-              <img class="messangers-list__image" src="images/icons/youtube.svg" width="28" height="22" alt="You Tube">
+          <li class="messengers-list__item">
+            <a class="messengers-list__link" href="#">
+              <img class="messengers-list__image" src="images/icons/youtube.svg" width="28" height="22" alt="You Tube">
             </a>
           </li>
-          <li class="messangers-list__item">
-            <a class="messangers-list__link" href="#">
-              <img class="messangers-list__image" src="images/icons/telegram.svg" width="28" height="22" alt="Telegram">
+          <li class="messengers-list__item">
+            <a class="messengers-list__link" href="#">
+              <img class="messengers-list__image" src="images/icons/telegram.svg" width="28" height="22" alt="Telegram">
             </a>
           </li>
         </ul>
@@ -162,7 +209,8 @@
           </li>
           <li class="html-list__item">
             <a class="html-list__link" href="#">
-              <img class="html-list__image" src="images/icons/logo-html.svg" width="27" height="34" alt="Логотип сайта html academy">
+              <img class="html-list__image" src="images/icons/logo-html.svg" width="27" height="34"
+                alt="Логотип сайта html academy">
             </a>
           </li>
         </ul>

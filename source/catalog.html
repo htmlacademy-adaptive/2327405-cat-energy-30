@@ -9,14 +9,32 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__link" href="#">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="images/icons/logo-desctop.svg">
-        <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg">
-        <img class="main-header__image" src="images/icons/logo-mobile.svg" width="33px" height="38px"
-          alt="Логотип сайта Cat Energy">
-      </picture>
-    </a>
+    <div class="main-header__catalog header-catalog">
+      <a class="main-header__link" href="#">
+        <picture>
+          <!-- <source media="(min-width: 1200px)" srcset="images/icons/logo-desctop.svg">
+        <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg"> -->
+          <img class="main-header__image" src="images/icons/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
+      <a class="main-header__link" href="#">
+        <picture>
+          <!-- <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
+        <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg"> -->
+          <img class="main-header__image" src="images/icons/footer-logo.svg" width="101" height="18"
+            alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
+      <a class="main-header__link" href="#">
+        <picture>
+          <!-- <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
+        <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg"> -->
+          <img class="main-header__image" src="images/icons/tab_mobile.svg" width="24" height="24"
+            alt="Открыть вкладку">
+        </picture>
+      </a>
+    </div>
     <nav class="main-header__navigation header-navigation">
       <ul class="header-navigation__list navigation">
         <li class="navigation__item">
@@ -37,261 +55,245 @@
       <h2 class="visually-hidden">Виды кормов</h2>
       <ul class="types__list types-list">
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="161" height="172" srcset="images/catalog-chicken-small-desctop@1x.png 1x, images/catalog-chicken-small-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="161" height="172" srcset="images/catalog-chicken-small-tablet@1x.png 1x, images/catalog-chicken-small-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-chicken-small-mobile@1x.png 1x" width="68" height="86"
-                srcset="images/catalog-chicken-small-mobile@2x.png 2x" alt="Маленькая коробка со вкусом курицы">
-            </picture>
-            <p class="types-container__title">Cat Energy PRO
+          <picture>
+            <source media="(min-width: 1200px)" weight="161" height="172"
+              srcset="images/catalog-chicken-small-desctop@1x.png 1x, images/catalog-chicken-small-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="161" height="172"
+              srcset="images/catalog-chicken-small-tablet@1x.png 1x, images/catalog-chicken-small-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-chicken-small-mobile@1x.png 1x" width="68"
+              height="86" srcset="images/catalog-chicken-small-mobile@2x.png 2x"
+              alt="Маленькая коробка со вкусом курицы">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy PRO
               500 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">500 г</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">500 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Курица</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Курица</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">700 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">700 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="172" height="196" srcset="images/catalog-chicken-big-desctop@1x.png 1x, images/catalog-chicken-big-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="168" height="206" srcset="images/catalog-chicken-big-tablet@1x.png 1x, images/catalog-chicken-big-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-chicken-big-mobile@1x.png 1x" width="84" height="100"
-                srcset="images/catalog-chicken-big-mobile@2x.png 2x" alt="Большая коробка со вкусом курицы">
-            </picture>
-            <p class="types-container__title">Cat Energy PRO
+          <picture>
+            <source media="(min-width: 1200px)" weight="172" height="196"
+              srcset="images/catalog-chicken-big-desctop@1x.png 1x, images/catalog-chicken-big-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="168" height="206"
+              srcset="images/catalog-chicken-big-tablet@1x.png 1x, images/catalog-chicken-big-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-chicken-big-mobile@1x.png 1x" width="84"
+              height="100" srcset="images/catalog-chicken-big-mobile@2x.png 2x" alt="Большая коробка со вкусом курицы">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy PRO
               1000 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">1000 г</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">1000 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Курица</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Курица</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">1000 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">1000 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="161" height="172" srcset="images/catalog-fish-small-desctop@1x.png 1x, images/catalog-fish-small-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="161" height="172" srcset="images/catalog-fish-small-tablet@1x.png 1x, images/catalog-fish-small-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-fish-small-mobile@1x.png 1x" width="68" height="86"
-                srcset="images/catalog-fish-small-mobile@2x.png 2x" alt="Маленькая коробка со вкусом рыбы">
-            </picture>
-            <p class="types-container__title">Cat Energy PRO
+          <picture>
+            <source media="(min-width: 1200px)" weight="161" height="172"
+              srcset="images/catalog-fish-small-desctop@1x.png 1x, images/catalog-fish-small-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="161" height="172"
+              srcset="images/catalog-fish-small-tablet@1x.png 1x, images/catalog-fish-small-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-fish-small-mobile@1x.png 1x" width="68" height="86"
+              srcset="images/catalog-fish-small-mobile@2x.png 2x" alt="Маленькая коробка со вкусом рыбы">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy PRO
               500 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">500 г</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">500 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Рыба</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Рыба</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">700 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">700 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="172" height="196" srcset="images/catalog-fish-big-desctop@1x.png 1x, images/catalog-fish-big-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="168" height="200" srcset="images/catalog-fish-big-tablet@1x.png 1x, images/catalog-fish-big-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-fish-big-mobile@1x.png 1x" width="84" height="100"
-                srcset="images/catalog-fish-big-mobile@2x.png 2x" alt="Большая коробка со вкусом рыбы">
-            </picture>
-            <p class="types-container__title">Cat Energy PRO
+          <picture>
+            <source media="(min-width: 1200px)" weight="172" height="196"
+              srcset="images/catalog-fish-big-desctop@1x.png 1x, images/catalog-fish-big-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="168" height="200"
+              srcset="images/catalog-fish-big-tablet@1x.png 1x, images/catalog-fish-big-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-fish-big-mobile@1x.png 1x" width="84" height="100"
+              srcset="images/catalog-fish-big-mobile@2x.png 2x" alt="Большая коробка со вкусом рыбы">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy PRO
               1000 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">1000 г</p>
+            <div class="types-item__characterss">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">1000 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Рыба</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Рыба</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">1000 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">1000 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="161" height="172" srcset="images/catalog-buckwheat-small-desctop@1x.png 1x, images/catalog-buckwheat-small-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="161" height="172" srcset="images/catalog-buckwheat-small-tablet@1x.png 1x, images/catalog-buckwheat-small-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-buckwheat-small-mobile@1x.png 1x" width="68" height="86"
-                srcset="images/catalog-buckwheat-small-mobile@2x.png 2x" alt="Маленькая коробка со вкусом гречки">
-            </picture>
-            <p class="types-container__title">Cat Energy SLIM
+          <picture>
+            <source media="(min-width: 1200px)" weight="161" height="172"
+              srcset="images/catalog-buckwheat-small-desctop@1x.png 1x, images/catalog-buckwheat-small-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="161" height="172"
+              srcset="images/catalog-buckwheat-small-tablet@1x.png 1x, images/catalog-buckwheat-small-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-buckwheat-small-mobile@1x.png 1x" width="68"
+              height="86" srcset="images/catalog-buckwheat-small-mobile@2x.png 2x"
+              alt="Маленькая коробка со вкусом гречки">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy SLIM
               500 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">500 г</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">500 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Гречка</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Гречка</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">400 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">400 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="172" height="196" srcset="images/catalog-buckwheat-big-desctop@1x.png 1x, images/catalog-buckwheat-big-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="168" height="200" srcset="images/catalog-buckwheat-big-tablet@1x.png 1x, images/catalog-buckwheat-big-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-buckwheat-big-mobile@1x.png 1x" width="84" height="100"
-                srcset="images/catalog-buckwheat-big-mobile@2x.png 2x" alt="Большая коробка со вкусом гречки">
-            </picture>
-            <p class="types-container__title">Cat Energy SLIM
+          <picture>
+            <source media="(min-width: 1200px)" weight="172" height="196"
+              srcset="images/catalog-buckwheat-big-desctop@1x.png 1x, images/catalog-buckwheat-big-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="168" height="200"
+              srcset="images/catalog-buckwheat-big-tablet@1x.png 1x, images/catalog-buckwheat-big-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-buckwheat-big-mobile@1x.png 1x" width="84"
+              height="100" srcset="images/catalog-buckwheat-big-mobile@2x.png 2x"
+              alt="Большая коробка со вкусом гречки">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy SLIM
               1000 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">1000 г</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">1000 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Гречка</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Гречка</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">700 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">700 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-container">
-            <picture>
-              <source media="(min-width: 1200px)" weight="163" height="174"  srcset="images/catalog-rice-desctop@1x.png 1x, images/catalog-rice-desctop@2x.png 2x">
-              <source media="(min-width: 768px)" weight="163" height="174" srcset="images/catalog-rice-tablet@1x.png 1x, images/catalog-rice-tablet@2x.png 2x">
-              <img class="types-container__image" src="images/catalog-rice-mobile@1x.png 1x" width="72" height="84"
-                srcset="images/catalog-rice-mobile@2x.png 2x" alt="Коробка со вкусом риса">
-            </picture>
-            <p class="types-container__title">Cat Energy SLIM
+          <picture>
+            <source media="(min-width: 1200px)" weight="163" height="174"
+              srcset="images/catalog-rice-desctop@1x.png 1x, images/catalog-rice-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" weight="163" height="174"
+              srcset="images/catalog-rice-tablet@1x.png 1x, images/catalog-rice-tablet@2x.png 2x">
+            <img class="types-container__image" src="images/catalog-rice-mobile@1x.png 1x" width="72" height="84"
+              srcset="images/catalog-rice-mobile@2x.png 2x" alt="Коробка со вкусом риса">
+          </picture>
+          <div class="types-item__container">
+            <p class="types-item__title">Cat Energy SLIM
               500 г</p>
-            <div class="types-container__weight weight">
-              <p class="weight__text">Масса</p>
-              <p class="weight__text">500 г</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Масса</p>
+              <p class="types-item__text">500 г</p>
             </div>
-            <div class="types-container__taste taste">
-              <p class="taste__text">Вкус</p>
-              <p class="taste__text">Рис</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Вкус</p>
+              <p class="types-item__text">Рис</p>
             </div>
-            <div class="types-container__price price">
-              <p class="price__text">Цена</p>
-              <p class="price__text">500 ₽</p>
+            <div class="types-item__characters">
+              <p class="types-item__text">Цена</p>
+              <p class="types-item__text">500 ₽</p>
             </div>
-            <a class="types-container__button green-button green-button--order" href="#">заказать</a>
           </div>
+          <a class="types-container__button green-button green-button--order" href="#">заказать</a>
         </li>
         <li class="types-list__item types-item">
-          <div class="types-item__container types-item__container--more types-container">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/icons/big-plus.svg" width="60" height="60">
-              <img class="main-header__image" src="images/icons/big-plus.svg" width="30" height="30"
-                alt="Показать больше товаров">
-            </picture>
-            <p class="types-container__title types-container__title--more">Показать еще 100500 товаров</p>
-            <p class="types-container__text">На самом деле вкусов гораздо больше!</p>
-            <a class="types-container__button green-button green-button--white" href="#">показать все</a>
-          </div>
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/icons/big-plus.svg" width="60" height="60">
+            <img class="main-header__image" src="images/icons/big-plus.svg" width="30" height="30"
+              alt="Показать больше товаров">
+          </picture>
+          <p class="types-item__title types-item__title--more">Показать еще 100500 товаров</p>
+          <p class="types-item__text">На самом деле вкусов гораздо больше!</p>
+          <a class="types-item__button green-button green-button--white" href="#">показать все</a>
         </li>
       </ul>
     </section>
     <section class="main-catalog__additionally additionally">
       <h2 class="additionally__title">Дополнительные товары</h2>
-      <div class="additionally__all all">
-        <div class="all__first first">
-          <ul class="first__table sweetener">
-            <li class="sweetener__item">
-              <p class="sweetener__text sweetener__text--big">Сахарозаменитель</p>
-            </li>
-            <li class="sweetener__item">
-              <p class="sweetener__text">1 упаковка (100 г)</p>
-            </li>
-            <li class="sweetener__item">
-              <p class="sweetener__text">200 ₽</p>
-            </li>
-            <li class="sweetener__item">
-              <a class="sweetener__button green-button" href="#">заказать</a>
-            </li>
-          </ul>
-          <ul class="first__table water">
-            <li class="water__item">
-              <p class="water__text water__text--big">Питьевая вода</p>
-            </li>
-            <li class="water__item">
-              <p class="water__text">5 литров</p>
-            </li>
-            <li class="water__item">
-              <p class="water__text">50 ₽</p>
-            </li>
-            <li class="water__item">
-              <a class="water__button green-button" href="#">заказать</a>
-            </li>
-          </ul>
-          <ul class="first__table milk">
-            <li class="milk__item">
-              <p class="milk__text milk__text--big">молоко</p>
-            </li>
-            <li class="milk__item">
-              <p class="milk__text">1 литр</p>
-            </li>
-            <li class="milk__item">
-              <p class="milk__text">100 ₽</p>
-            </li>
-            <li class="milk__item">
-              <a class="milk__button green-button" href="#">заказать</a>
-            </li>
-          </ul>
-          <ul class="first__table vitamins">
-            <li class="vitamins__item">
-              <p class="vitamins__text vitamins__text--big">витамины</p>
-            </li>
-            <li class="vitamins__item">
-              <p class="vitamins__text">1 упаковка (30 г)</p>
-            </li>
-            <li class="vitamins__item">
-              <p class="vitamins__text">300 ₽</p>
-            </li>
-            <li class="vitamins__item">
-              <a class="vitamins__button green-button" href="#">заказать</a>
-            </li>
-          </ul>
+      <div class="additionally__products products">
+        <p class="products__title">Сахарозаменитель</p>
+        <div class="products__container">
+          <p class="products__text">1 упаковка (100 г)</p>
+          <p class="products__text">200 ₽</p>
         </div>
-        <div class="all__second second">
-          <img class="second__image" src="#" alt="Подарок">
-          <p class="second__text">Закажите все
-            и получите чехол для
-            кота в подарок!</p>
+      </div>
+      <div class="additionally__products products">
+        <p class="products__title">питьевая вода</p>
+        <div class="products__container">
+          <p class="products__text">5 литров</p>
+          <p class="products__text">50 ₽</p>
         </div>
+      </div>
+      <div class="additionally__products products">
+        <p class="products__title">молоко</p>
+        <div class="products__container">
+          <p class="products__text">1 литр</p>
+          <p class="products__text">100 ₽</p>
+        </div>
+      </div>
+      <div class="additionally__products products">
+        <p class="products__title">витамины</p>
+        <div class="products__container">
+          <p class="products__text">1 упаковка (30 г)</p>
+          <p class="products__text">300 ₽</p>
+        </div>
+      </div>
+      </div>
+      <div class="additionally__bottom">
+        <img class="additionally__image" src="#" alt="Подарок">
+        <p class="additionally__text">Закажите все
+          и получите чехол для
+          кота в подарок!</p>
       </div>
     </section>
   </main>
@@ -299,7 +301,7 @@
     <section class="main-footer__invitation footer-invitation">
       <h2 class="visually-hidden">Контактный адрес</h2>
       <div class="footer-invitation__container contacts-container">
-        <p class="contacts-container__text contacts-container__text--big">приглашаем
+        <p class="contacts-container__text contacts-container__text--big">приглашаем<br>
           к сотрудничеству
           дилеров!</p>
         <p class="contacts-container__text">ул. Большая
@@ -308,29 +310,33 @@
           Санкт-Петербург</p>
       </div>
       <picture>
-        <source width="1440" height="400"  type="image/png" media="(min-width: 1200px)" src="images/map-desktop@1x.png 1x" srcset="images/map-desktop@2x.png 2x">
-        <source width="768" height="400"  type="image/png" media="(min-width: 768px)" src="images/map-tablet@1x.png 1x" srcset="images/map-tablet@2x.png 2x">
-      <img class="footer-invitation__image" src="images/map-mobile@1x.png 1x" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте">
-    </picture>
+        <!-- <source width="1440" height="400" type="image/png" media="(min-width: 1200px)"
+          src="images/map-desktop@1x.png 1x" srcset="images/map-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" src="images/map-tablet@1x.png 1x"
+          srcset="images/map-tablet@2x.png 2x"> -->
+        <img class="footer-invitation__image" src="images/map-mobile@1x.png " srcset="images/map-mobile@2x.png "
+          width="320" height="362" alt="Расположение на карте">
+      </picture>
     </section>
     <section class="main-footer__messengers main-footer-messengers">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="main-footer-messengers__container main-footer-container">
-        <img class="main-footer-container__logo" src="images/icons/footer-logo.svg" width="128" height="24" alt="Логотип сайта">
-        <ul class="main-footer-container__list messangers-list">
-          <li class="messangers-list__item">
-            <a class="messangers-list__link" href="#">
-              <img class="messangers-list__image" src="images/icons/vk.svg" width="28" height="22" alt="VK">
+        <img class="main-footer-container__logo" src="images/icons/footer-logo.svg" width="128" height="24"
+          alt="Логотип сайта">
+        <ul class="main-footer-container__list messengers-list">
+          <li class="messengers-list__item">
+            <a class="messengers-list__link" href="#">
+              <img class="messengers-list__image" src="images/icons/vk.svg" width="28" height="22" alt="VK">
             </a>
           </li>
-          <li class="messangers-list__item">
-            <a class="messangers-list__link" href="#">
-              <img class="messangers-list__image" src="images/icons/youtube.svg" width="28" height="22" alt="You Tube">
+          <li class="messengers-list__item">
+            <a class="messengers-list__link" href="#">
+              <img class="messengers-list__image" src="images/icons/youtube.svg" width="28" height="22" alt="You Tube">
             </a>
           </li>
-          <li class="messangers-list__item">
-            <a class="messangers-list__link" href="#">
-              <img class="messangers-list__image" src="images/icons/telegram.svg" width="28" height="22" alt="Telegram">
+          <li class="messengers-list__item">
+            <a class="messengers-list__link" href="#">
+              <img class="messengers-list__image" src="images/icons/telegram.svg" width="28" height="22" alt="Telegram">
             </a>
           </li>
         </ul>
@@ -342,7 +348,8 @@
           </li>
           <li class="html-list__item">
             <a class="html-list__link" href="#">
-              <img class="html-list__image" src="images/icons/logo-html.svg" width="27" height="34" alt="Логотип сайта html academy">
+              <img class="html-list__image" src="images/icons/logo-html.svg" width="27" height="34"
+                alt="Логотип сайта html academy">
             </a>
           </li>
         </ul>

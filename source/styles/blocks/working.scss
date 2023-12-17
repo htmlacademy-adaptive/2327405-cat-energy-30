@@ -1,0 +1,9 @@
+.working {
+  margin-bottom: 49px;
+}
+
+.working__title {
+  @extend %reset;
+  @extend %title;
+  margin-bottom: 42px;
+}

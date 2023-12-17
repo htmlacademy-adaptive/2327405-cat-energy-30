@@ -1,0 +1,12 @@
+.html-list {
+  @extend %reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.html-list__link {
+  @extend %reset;
+  font-size: 16px;
+  text-decoration: none;
+  color: #444444;
+}
