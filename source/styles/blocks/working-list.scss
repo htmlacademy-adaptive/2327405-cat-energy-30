@@ -1,0 +1,13 @@
+.working-list {
+  @extend %reset;
+}
+
+.working-list__item {
+  padding-left: 80px;
+  margin-bottom: 20px;
+}
+
+.working-list__text {
+  @extend %reset;
+  width: 200px;
+}

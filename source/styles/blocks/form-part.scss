@@ -1,0 +1,36 @@
+.form-part {
+  border: none;
+
+  @extend %reset;
+}
+
+.form-part__legend {
+  @extend %small-title;
+  @extend %reset;
+  line-height: 26px;
+}
+
+.form-part__legend--small {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @extend %reset;
+  line-height: 18px;
+}
+
+.form-part-list__item {
+  @extend %form-paragraph;
+  @extend %reset;
+}
+
+.form-part-list__label {
+  @extend %form-paragraph;
+  @extend %reset;
+}
+
+.form-part-list__input {
+  @extend %form-paragraph;
+  @extend %reset;
+}

@@ -1,0 +1,20 @@
+.green-button {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 44px;
+  background-color: #68b638;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+
+.green-button--white {
+  background: var(--basic_grey, #f2f2f2);
+  color: var(--special_dark-grey, #444444);
+}
