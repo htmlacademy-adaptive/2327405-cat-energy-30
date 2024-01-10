@@ -1,7 +1,24 @@
 .advantages-container-bottom {
   background: var(--basic_grey, #f2f2f2);
-  padding: 24px 33px 18px 20px;
+  padding: 21px 33px 18px 20px;
   box-sizing: border-box;
+  width: 280px;
+  background-image: url("../../images/icons/cat-pro.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+  background-position: 12px 35px;
+  @media(min-width: $tablet-width){
+    width: 708px;
+    background-size: 268px 112px;
+    background-position: 415px 135px;
+    padding-bottom: 56px;
+  }
+
+  @media(min-width: $desktop-width){
+    width: 570px;
+    background-size: 143px 56px;
+    background-position: 31px 68px;
+  }
 }
 
 .advantages-container-bottom__text {

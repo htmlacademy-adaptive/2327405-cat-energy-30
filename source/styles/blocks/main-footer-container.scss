@@ -1,4 +1,33 @@
+.main-footer-container {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 161px;
+  }
+  @media(min-width:$desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+ .main-footer-container__small {
+  @media(min-width: $tablet-width){
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+  }
+  @media(min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 676px;
+  }
+}
+
 .main-footer-container__logo {
-  margin-left: 94px;
-  margin-bottom: 40px;
+  margin-left: 77px;
+  margin-bottom: 37px;
+
+  @media(min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 5px;
+  }
 }

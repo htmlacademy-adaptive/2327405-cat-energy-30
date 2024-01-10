@@ -1,15 +1,62 @@
-
 .description {
   margin-bottom: 20px;
-  height: 450px;
+  background-image: url("../../images/chicken-box-mobile@1x.png");
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-position: 20px 167px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/chicken-box-tablet@1x.png");
+    min-height: 790px;
+    background-position: 30px 202px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
+    background-image: url("../../images/chicken-box-desctop@1x.png");
+    background-position: 556px 0;
+    padding-left: 190px;
+    margin-bottom: 132px;
+  }
 }
 
 .description__title {
   @extend %reset;
   @extend %title;
-  margin-bottom: 25px;
-  text-align: center;
   color: #000000;
+  padding-top: 26px;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media(min-width: $tablet-width) {
+    color: #000;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    width: 417px;
+    margin-bottom: 40px;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-top: 80px;
+    width: 416px;
+    color: #000;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
 }
 
 .description__text {
@@ -18,6 +65,27 @@
   font-family: "Oswald", sans-serif;
   line-height: 14px;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
+  margin-bottom: 302px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #000;
+    font-family: "Oswald",sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+  }
 }

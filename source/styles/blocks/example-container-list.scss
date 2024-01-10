@@ -1,9 +1,31 @@
 .example-container-list {
   @extend %reset;
   display: flex;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: space-between;
   margin-bottom: 20px;
+  @media(min-width: $tablet-width){
+    gap: 42px;
+  }
+  @media(min-width: $desktop-width){
+    gap:40px;
+    margin-bottom: 35px;
+  }
+}
+
+.example-container-list__item {
+  padding-top: 16px;
+  padding-left: 25px;
+  padding-right: 22px;
+  box-sizing: border-box;
+  @media(min-width: $tablet-width){
+    padding-top: 14px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+.example-container-list__item--days {
+  padding-left: 19px;
 }
 
 .example-container-list__title {
@@ -11,10 +33,38 @@
   @extend %small-title;
   line-height: 24px;
   text-align: center;
+  margin-bottom: 6px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
 }
 
 .example-container-list__text {
   @extend %reset;
   width: 77px;
+  color: var(--special_dark-grey, #444);
   text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  @media(min-width: $tablet-width){
+    width: 125px;
+    font-size: 14px;
+  }
+  @media(min-width: $desktop-width){
+    width: 126px;
+  }
 }

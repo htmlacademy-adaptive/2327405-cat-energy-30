@@ -1,4 +1,8 @@
 /* здесь используйте глобальные переменные */
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
 %reset {
   margin: 0;
   padding: 0;
@@ -12,6 +16,15 @@
   font-weight: 400;
   line-height: 36px;
   color: #000000;
+}
+
+%desktop-title{
+color: #000;
+font-family: "Oswald",sans-serif;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px;
 }
 
 %small-title {
