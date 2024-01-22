@@ -1,3 +1,25 @@
-.footer-invitation {
-  margin-bottom: 40px;
+.footer-invitation-container{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../images/map-marker-mobile@2x.png");
+    background-repeat: no-repeat;
+    top: 137px;
+    left: 134px;
+    @media(min-width: $tablet-width){
+      width: 113px;
+      height: 106px;
+      top: 146px;
+      left: 333px;
+      background-image: url("../../images/map-marker-tablet@2x.png");
+    }
+    @media(min-width: $desktop-width){
+      top: 131px;
+      left: 909px;
+    }
+  }
+
 }

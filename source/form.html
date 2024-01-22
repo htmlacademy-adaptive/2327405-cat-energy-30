@@ -8,43 +8,41 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header main-header--form">
     <div class="main-header__catalog header-catalog">
       <a class="main-header__link" href="#">
         <picture>
-          <!-- <source media="(min-width: 1200px)" srcset="images/icons/logo-desctop.svg">
-        <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg"> -->
+           <source media="(min-width: 1200px)" srcset="images/icons/logo-desctop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="60" height="50">
           <img class="main-header__image" src="images/icons/logo-mobile.svg" width="33" height="38"
             alt="Логотип сайта Cat Energy">
         </picture>
       </a>
-      <a class="main-header__link" href="#">
+      <a class="main-header__link main-header__link--cat-energy" href="#">
         <picture>
-          <!-- <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
-        <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg"> -->
+          <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg" width="101" height="18">
           <img class="main-header__image" src="images/icons/footer-logo.svg" width="101" height="18"
             alt="Логотип сайта Cat Energy">
         </picture>
       </a>
       <a class="main-header__link" href="#">
         <picture>
-          <!-- <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
-        <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg"> -->
-          <img class="main-header__image" src="images/icons/tab_mobile.svg" width="24" height="24"
-            alt="Открыть вкладку">
+          <img class="main-header__image main-header__image--burger" src="images/icons/logo_mobile-cross.svg" width="18"
+            height="18" alt="Открыть вкладку">
         </picture>
       </a>
     </div>
     <nav class="main-header__navigation header-navigation">
       <ul class="header-navigation__list navigation">
         <li class="navigation__item">
-          <a href="index.html" class="navigation__link">главная</a>
+          <a href="index.html" class="navigation__link navigation__link--form navigation__link--main">Главная</a>
         </li>
         <li class="navigation__item">
-          <a href="catalog.html" class="navigation__link">каталог продукции</a>
+          <a href="catalog.html" class="navigation__link navigation__link--form">каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">подбор программы</a>
+          <a href="#" class="navigation__link navigation__link--form">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -54,107 +52,115 @@
     <section class="main-form__fill fill">
       <h2 class="visually-hidden">Данные о коте</h2>
       <form class="fill__filter filter" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="filter__form-part form-part">
+        <fieldset class="filter__form-part form-part form-part--characters">
           <legend class="form-part__legend form-part__legend--small">Заполните анкету, и мы подберем
             программу питания для вашего кота</legend>
-          <ul class="form-part__list form-part-list">
+          <ul class="form-part__list form-part-list form-part-list--fields">
             <li class="form-part-list__item">
               <label class="form-part-list__label">
-                Имя:*
-                <input type="text" class="form-part-list__input" placeholder="барсик" name="cat name" required>
+                <span class="form-part-list__span">Имя:*</span>
+                <input type="text" class="form-part-list__input form-part-list__input--name" placeholder="барсик"
+                  name="cat name" required>
               </label>
             </li>
             <li class="form-part-list__item">
               <label class="form-part-list__label">
-                Вес (кг):*
-                <input type="text" class="form-part-list__input" placeholder="7" name="cat weight" required>
+                <span class="form-part-list__span">Вес (кг):*</span>
+                <input type="text" class="form-part-list__input form-part-list__input--weight" placeholder="7"
+                  name="cat weight" required>
               </label>
             </li>
             <li class="form-part-list__item">
               <label class="form-part-list__label">
-                Возраст (лет):
-                <input type="text" class="form-part-list__input" placeholder="7" name="cat age" required>
+                <span class="form-part-list__span">Возраст (лет):</span>
+                <input type="text" class="form-part-list__input form-part-list__input--age" placeholder="7"
+                  name="cat age" required>
               </label>
             </li>
           </ul>
-          <ul class="form-part__list form-part-list">
-            <li class="form-part-list__item">
+          <ul class="form-part__list form-part-list form-part-list--radio">
+            <li class="form-part-list__item form-part-list__item--radio">
               <label class="form-part-list__label">
-                <input type="radio" class="form-part-list__input" name="chose plan" value="slim" checked>
-                похудение
+                <input type="radio" class="form-part-list__input form-part-list__input--radio" name="chose plan"
+                  value="slim" checked>
+                <span class="form-part-list__span--radio">похудение</span>
               </label>
             </li>
-            <li class="form-part-list__item">
+            <li class="form-part-list__item form-part-list__item--radio">
               <label class="form-part-list__label">
-                <input type="radio" class="form-part-list__input" name="chose plan" value="weight gain">
-                Набор массы
+                <input type="radio" class="form-part-list__input form-part-list__input--radio" name="chose plan"
+                  value="weight gain">
+                <span class="form-part-list__span--radio">Набор массы</span>
               </label>
             </li>
-            <li class="form-part-list__item">
+            <li class="form-part-list__item form-part-list__item--radio">
               <label class="form-part-list__label">
-                <input type="radio" class="form-part-list__input" name="chose plan" value="advice">
-                Не знаю (Нужен ваш совет)
+                <input type="radio" class="form-part-list__input form-part-list__input--radio" name="chose plan"
+                  value="advice">
+                <span class="form-part-list__span--radio">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter__form-part form-part">
-          <legend class="form-part__legend">Контактные данные
+          <legend class="form-part__legend form-part__legend--contacts">Контактные данные
             (владельца кота)</legend>
-          <ul class="form-part__list form-part-list">
-            <li class="form-part-list__item">
+          <ul class="form-part__list form-part-list form-part-list--contacts">
+            <li class="form-part-list__item form-part-list__item--contacts">
               <label class="form-part-list__label">
                 E-mail:*
-                <input type="email" class="form-part-list__input" placeholder="kuklachev@gmail.com" name="your email"
-                  required>
+                <input type="email" class="form-part-list__input form-part-list__input--email"
+                  placeholder="kuklachev@gmail.com" name="your email" required>
               </label>
             </li>
-            <li class="form-part-list__item">
+            <li class="form-part-list__item form-part-list__item--contacts">
               <label class="form-part-list__label">
                 Телефон:*
-                <input type="tel" class="form-part-list__input" placeholder="8 (960) 900-60-90" name="your tel"
-                  required>
+                <input type="tel" class="form-part-list__input form-part-list__input--tel"
+                  placeholder="8 (960) 900-60-90" name="your tel" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter__form-part form-part">
-          <legend class="form-part__legend">Расскажите обо всех повАдках кота</legend>
-          <textarea class="form-part__textarea" name="description your cat" cols="30" rows="10">
-            Расскажите обо всех повАдках кота
+          <legend class="form-part__legend form-part__legend--comments">Комментарий</legend>
+          <textarea class="form-part__textarea" name="description your cat" cols="30" rows="10">Расскажите обо всех повадках кота
           </textarea>
         </fieldset>
         <fieldset class="filter__form-part form-part">
-          <legend class="form-part__legend">Дополнительно</legend>
-          <ul class="form-part__list form-part-list">
-            <li class="form-part-list__item">
+          <legend class="form-part__legend form-part__legend--more">Дополнительно</legend>
+          <ul class="form-part__list form-part-list form-part-list--more">
+            <li class="form-part-list__item form-part-list-item--more">
               <label class="form-part-list__label">
-                <input type="checkbox" class="form-part-list__input" name="no-sugar">
-                сахарозаменитель
+                <input type="checkbox" class="form-part-list__input form-part-list__input--checkbox" name="no-sugar"
+                  checked>
+                <span class="form-part-list__span form-part-list__span--checkbox">сахарозаменитель</span>
               </label>
             </li>
-            <li class="form-part-list__item">
+            <li class="form-part-list__item form-part-list-item--more">
               <label class="form-part-list__label">
-                <input type="checkbox" class="form-part-list__input" name="water">
-                питьевая вода
+                <input type="checkbox" class="form-part-list__input form-part-list__input--checkbox" name="water">
+                <span class="form-part-list__span form-part-list__span--checkbox">питьевая вода</span>
               </label>
             </li>
-            <li class="form-part-list__item">
+            <li class="form-part-list__item form-part-list-item--more">
               <label class="form-part-list__label">
-                <input type="checkbox" class="form-part-list__input" name="milk">
-                молоко
+                <input type="checkbox" class="form-part-list__input form-part-list__input--checkbox" name="milk">
+                <span class="form-part-list__span form-part-list__span--checkbox">молоко</span>
               </label>
             </li>
-            <li class="form-part-list__item">
+            <li class="form-part-list__item form-part-list-item--more">
               <label class="form-part-list__label">
-                <input type="checkbox" class="form-part-list__input" name="vitamins">
-                витамины
+                <input type="checkbox" class="form-part-list__input form-part-list__input--checkbox" name="vitamins">
+                <span class="form-part-list__span form-part-list__span--checkbox">витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter__button green-button">отправить заявку</button>
-        <p class="filter__text">* — Обязательные поля</p>
+        <div class="filter__bottom-container">
+          <button type="submit" class="filter__button green-button">отправить заявку</button>
+          <p class="filter__text">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>
@@ -162,58 +168,63 @@
     <section class="main-footer__invitation footer-invitation">
       <h2 class="visually-hidden">Контактный адрес</h2>
       <div class="footer-invitation__container contacts-container">
-        <p class="contacts-container__text contacts-container__text--big">приглашаем<br>
-          к сотрудничеству
-          дилеров!</p>
+        <p class="contacts-container__text contacts-container__text--big">приглашаем<br>к сотрудничеству дилеров!</p>
         <p class="contacts-container__text">ул. Большая
           Конюшенная, д. 19/8
 
-          Санкт-Петербург</p>
+          <span class="contacts-container__span">Санкт-Петербург</span>
+        </p>
       </div>
+      <div class="footer-invitation-container">
       <picture>
-        <!-- <source width="1440" height="400" type="image/png" media="(min-width: 1200px)"
+         <source width="1440" height="400" type="image/png" media="(min-width: 1200px)"
           src="images/map-desktop@1x.png 1x" srcset="images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" src="images/map-tablet@1x.png 1x"
-          srcset="images/map-tablet@2x.png 2x"> -->
+          srcset="images/map-tablet@2x.png 2x">
         <img class="footer-invitation__image" src="images/map-mobile@1x.png " srcset="images/map-mobile@2x.png "
           width="320" height="362" alt="Расположение на карте">
       </picture>
+      </div>
     </section>
     <section class="main-footer__messengers main-footer-messengers">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="main-footer-messengers__container main-footer-container">
         <img class="main-footer-container__logo" src="images/icons/footer-logo.svg" width="128" height="24"
           alt="Логотип сайта">
-        <ul class="main-footer-container__list messengers-list">
-          <li class="messengers-list__item">
-            <a class="messengers-list__link" href="#">
-              <img class="messengers-list__image" src="images/icons/vk.svg" width="28" height="22" alt="VK">
-            </a>
-          </li>
-          <li class="messengers-list__item">
-            <a class="messengers-list__link" href="#">
-              <img class="messengers-list__image" src="images/icons/youtube.svg" width="28" height="22" alt="You Tube">
-            </a>
-          </li>
-          <li class="messengers-list__item">
-            <a class="messengers-list__link" href="#">
-              <img class="messengers-list__image" src="images/icons/telegram.svg" width="28" height="22" alt="Telegram">
-            </a>
-          </li>
-        </ul>
-        <ul class="main-footer-container__list html-list">
-          <li class="html-list__item">
-            <a class="html-list__link" href="#">
-              <p class="html-list__text">HTML Academy</p>
-            </a>
-          </li>
-          <li class="html-list__item">
-            <a class="html-list__link" href="#">
-              <img class="html-list__image" src="images/icons/logo-html.svg" width="27" height="34"
-                alt="Логотип сайта html academy">
-            </a>
-          </li>
-        </ul>
+        <div class="main-footer-container__small">
+          <ul class="main-footer-container__list messengers-list">
+            <li class="messengers-list__item">
+              <a class="messengers-list__link" href="#">
+                <img class="messengers-list__image" src="images/icons/vk.svg" width="28" height="22" alt="VK">
+              </a>
+            </li>
+            <li class="messengers-list__item">
+              <a class="messengers-list__link" href="#">
+                <img class="messengers-list__image" src="images/icons/youtube.svg" width="28" height="22"
+                  alt="You Tube">
+              </a>
+            </li>
+            <li class="messengers-list__item">
+              <a class="messengers-list__link" href="#">
+                <img class="messengers-list__image" src="images/icons/telegram.svg" width="28" height="22"
+                  alt="Telegram">
+              </a>
+            </li>
+          </ul>
+          <ul class="main-footer-container__list html-list">
+            <li class="html-list__item">
+              <a class="html-list__link" href="#">
+                <p class="html-list__text">HTML Academy</p>
+              </a>
+            </li>
+            <li class="html-list__item">
+              <a class="html-list__link" href="#">
+                <img class="html-list__image" src="images/icons/logo-html.svg" width="27" height="34"
+                  alt="Логотип сайта html academy">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </footer>

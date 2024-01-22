@@ -4,10 +4,184 @@
   @extend %reset;
 }
 
+.form-part--characters {
+  @media(min-width:$desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 56px;
+    margin-bottom: 47px;
+  }
+}
+
 .form-part__legend {
   @extend %small-title;
   @extend %reset;
   line-height: 26px;
+  text-transform: none;
+  position: relative;
+
+  @media(min-width:$tablet-width) {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 49px;
+  }
+}
+
+.form-part__legend--contacts {
+  margin-bottom: 33px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 207px;
+    height: 2px;
+    width: 93px;
+    background: #68b738;
+
+    @media(min-width:$tablet-width) {
+      top: 21px;
+      left: 553px;
+      height: 2px;
+      width: 146px;
+    }
+
+    @media(min-width: $desktop-width) {
+      top: 22px;
+      width: 779px;
+    }
+  }
+
+  &::after {
+    @media(min-width:$tablet-width) {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: -69px;
+      height: 2px;
+      width: 30px;
+      background: #68b738;
+    }
+
+    @media(min-width:$desktop-width) {
+      top: 22px;
+      left: -108px;
+      width: 68px;
+    }
+  }
+
+  @media(min-width:$tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-left: 89px;
+    margin-bottom: 76px;
+  }
+}
+
+.form-part__legend--comments {
+  margin-bottom: 38px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 142px;
+    height: 2px;
+    width: 158px;
+    background: #68b738;
+
+    @media(min-width:$tablet-width) {
+      top: 22px;
+      left: 223px;
+      height: 2px;
+      width: 476px;
+    }
+
+    @media(min-width:$desktop-width) {
+      width: 1107px;
+    }
+  }
+
+  &::after {
+    @media(min-width:$tablet-width) {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -69px;
+      height: 2px;
+      width: 30px;
+      background: #68b738;
+    }
+
+    @media(min-width:$desktop-width) {
+      left: -109px;
+      width: 68px;
+    }
+  }
+
+  @media(min-width:$tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-left: 90px;
+    margin-bottom: 79px;
+  }
+}
+
+.form-part__legend--more {
+  margin-bottom: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 161px;
+    height: 2px;
+    width: 139px;
+    background: #68b738;
+
+    @media(min-width:$tablet-width) {
+      top: 23px;
+      left: 253px;
+      height: 2px;
+      width: 446px;
+    }
+
+    @media(min-width:$desktop-width) {
+      width: 1077px;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 161px;
+    height: 2px;
+    width: 139px;
+    background: #68b738;
+    @media(min-width:$tablet-width) {
+      top:22px;
+      left: -109px;
+      width: 30px;
+    }
+    @media(min-width:$desktop-width) {
+      width: 68px;
+    }
+  }
+
+  @media(min-width:$tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-left: 89px;
+  }
 }
 
 .form-part__legend--small {
@@ -15,22 +189,60 @@
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-
   @extend %reset;
   line-height: 18px;
+  margin-bottom: 1px;
+  width: 226px;
+  margin-bottom: 37px;
+
+  @media(min-width:$tablet-width) {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: 323px;
+    margin-left: 51px;
+    margin-bottom: 67px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-left: 91px;
+    margin-bottom: 66px;
+  }
 }
 
-.form-part-list__item {
-  @extend %form-paragraph;
-  @extend %reset;
-}
+.form-part__textarea {
+  width: 280px;
+  height: 144px;
+  color: var(--special_dark-grey, #444);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-bottom: 26px;
 
-.form-part-list__label {
-  @extend %form-paragraph;
-  @extend %reset;
-}
+  @media(min-width:$tablet-width) {
+    width: 628px;
+    height: 175px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-left: 19px;
+    margin-bottom: 60px;
+  }
 
-.form-part-list__input {
-  @extend %form-paragraph;
-  @extend %reset;
+  @media(min-width:$desktop-width) {
+    margin-left: 90px;
+    width: 1220px;
+    padding-top: 8px;
+    margin-bottom: 65px;
+  }
 }

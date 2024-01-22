@@ -1,4 +1,43 @@
 .filter__text {
   @extend %reset;
   color: #000000;
+  text-align: center;
+  margin-bottom: 31px;
+  @media(min-width:$tablet-width) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 16px;
+  }
+  @media(min-width:$desktop-width) {
+    padding-top: 18px;
+  }
+}
+
+.filter__button{
+  border: none;
+  min-width: 280px;
+  margin-bottom: 20px;
+  @media(min-width:$tablet-width) {
+    margin-left: 51px;
+    margin-bottom: 21px;
+    min-width: 282px;
+    align-self: flex-start;
+  }
+  @media(min-width:$desktop-width) {
+    min-width: 570px;
+  }
+}
+
+.filter__bottom-container{
+  @media(min-width:$tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    gap:58px;
+  }
+  @media(min-width:$desktop-width) {
+    margin-left: 39px;
+    gap:76px
+  }
 }

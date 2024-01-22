@@ -1,3 +1,93 @@
+.main-header {
+  margin-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 81px;
+    margin-bottom: 51px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 541px;
+    margin-bottom: 2px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      background-image: url("../../images/big-cat-logo-background@1x.png");
+      top: -55px;
+      left: 720px;
+      z-index: -1;
+    }
+  }
+}
+
+.main-header--form {
+  &::after {
+    display: none;
+  }
+
+}
+
+.main-header--catalog {
+  &::after {
+    display: none;
+  }
+}
+
 .main-header__link {
   text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-header__link--cat-energy {
+  margin-top: 10px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 15px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-top: 19px;
+  }
+}
+
+.main-header__catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+
+  .main-header__image--burger {
+    margin-top: 9px;
+  }
+
+  @media(min-width: $tablet-width) {
+    width: 187px;
+    justify-content: flex-start;
+    gap: 13px;
+
+    .main-header__image--burger {
+      display: none;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    gap: 13px;
+    width: 202px;
+  }
 }
