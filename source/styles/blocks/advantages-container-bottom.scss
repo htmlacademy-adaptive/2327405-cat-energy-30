@@ -3,10 +3,52 @@
   padding: 21px 33px 18px 20px;
   box-sizing: border-box;
   width: 280px;
-  background-image: url("../../images/icons/cat-pro.svg");
-  background-repeat: no-repeat;
-  background-size: 67px 28px;
-  background-position: 12px 35px;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    background-image: url("../../images/icons/cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+    top: 35px;
+    left: 13px;
+    @media(min-width: $tablet-width){
+      width: 268px;
+      height: 112px;
+      top: 134px;
+      left: 415px;
+    }
+    @media(min-width: $desktop-width){
+      width: 134px;
+      height: 56px;
+      top: 68px;
+      left: 35px;
+    }
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #68B738;
+    border-radius: 50%;
+    top: 24px;
+    left: 21px;
+    @media(min-width: $tablet-width){
+      width: 200px;
+      height: 200px;
+      top: 91px;
+      left: 445px;
+    }
+    @media(min-width: $desktop-width){
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 53px;
+    }
+  }
   @media(min-width: $tablet-width){
     width: 708px;
     background-size: 268px 112px;
@@ -23,4 +65,16 @@
 
 .advantages-container-bottom__text {
   @extend %reset;
+}
+
+.advantages-container-bottom__link{
+  position: relative;
+  &::before{
+    content: "";
+    left: 99px;
+    @media(min-width: $tablet-width){
+      top: 9px;
+      left: 129px;
+    }
+  }
 }

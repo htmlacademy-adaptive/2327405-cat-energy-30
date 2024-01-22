@@ -3,11 +3,12 @@
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  position: relative;
 
   @media(min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
-    gap: 85px;
+    gap: 81px;
     margin-bottom: 51px;
     padding-left: 30px;
     padding-right: 30px;
@@ -20,6 +21,22 @@
     margin-bottom: 2px;
     padding-left: 110px;
     padding-right: 110px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      background-image: url("../../images/big-cat-logo-background@1x.png");
+      top: -55px;
+      left: 720px;
+      z-index: -1;
+    }
+  }
+}
+
+.main-header--form{
+  &::after{
+    display: none;
   }
 }
 

@@ -2,7 +2,7 @@
   @extend %reset;
   color: #000000;
   text-align: center;
-  margin-bottom: 57px;
+  margin-bottom: 31px;
   @media(min-width:$tablet-width) {
     font-size: 16px;
     font-style: normal;
@@ -18,7 +18,7 @@
 .filter__button{
   border: none;
   min-width: 280px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   @media(min-width:$tablet-width) {
     margin-left: 51px;
     margin-bottom: 21px;

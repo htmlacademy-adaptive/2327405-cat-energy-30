@@ -1,3 +1,11 @@
 .main-footer{
   position: relative;
+  background-color: #f2f2f2;
+  padding-top: 26px;
+  @media(min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+  @media(min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }

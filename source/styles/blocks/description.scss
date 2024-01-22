@@ -6,6 +6,23 @@
   background-position: 20px 167px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 323px;
+    height: 302px;
+    background-image: url("../../images/cat-logo-background@2x.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @media(min-width: $tablet-width) {
+      background-image: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../../images/chicken-box-tablet@1x.png");
@@ -28,10 +45,10 @@
 .description__title {
   @extend %reset;
   @extend %title;
-  color: #000000;
   padding-top: 26px;
   text-align: center;
   margin-bottom: 26px;
+  color: #ffffff;
 
   @media(min-width: $tablet-width) {
     color: #000;
@@ -68,19 +85,24 @@
   color: #000000;
   margin-bottom: 302px;
   text-align: center;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+    color: #000000;
+    margin-bottom: 49px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+    z-index: 100;
+    position: relative;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
     color: #000;
-    font-family: "Oswald",sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
