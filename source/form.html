@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <meta name="viewport" content="width=device-with,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -23,25 +30,24 @@
       <li class="main-header__item">
         <a class="main-header__link main-header__link--cat-energy" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/icons/footer-logo.svg" width="118" height="21">
-          <source media="(min-width: 768px)" srcset="images/icons/footer-logo.svg" width="101" height="18">
-            <img class="main-header__image" src="images/icons/footer-logo.svg" width="101" height="18"
-              alt="Логотип сайта Cat Energy">
+            <source media="(min-width: 1200px)" srcset="images/icons/logo-header-desktop.svg" width="118" height="21">
+            <img class="main-header__image main-header__image--cat-energy" src="images/icons/logo-header-tablet.svg"
+              width="101" height="18" alt="Логотип сайта Cat Energy">
           </picture>
         </a>
       </li>
-      <li class="main-header__item main-header__item--open">
+      <li class="main-header__item main-header__item--burger">
         <button class="main-header__button">
           <img class="main-header__image main-header__image--burger" src="images/icons/logo-burger.svg" width="24"
             height="24" alt="Открыть вкладку">
         </button>
-        </li>
-        <li class="main-header__item main-header__item--close">
-          <button class="main-header__button">
-            <img class="main-header__image main-header__image--close-cross" src="images/icons/logo_mobile-cross.svg" width="18"
-              height="18" alt="Закрыть вкладку">
-          </button>
-          </li>
+      </li>
+      <li class="main-header__item main-header__item--cross">
+        <button class="main-header__button">
+          <img class="main-header__image main-header__image--close-cross" src="images/icons/logo_mobile-cross.svg"
+            width="18" height="18" alt="Закрыть вкладку">
+        </button>
+      </li>
     </ul>
     <nav class="main-header__navigation header-navigation">
       <ul class="header-navigation__list navigation navigation--form">
@@ -191,7 +197,7 @@
           src="images/map-desktop@1x.png 1x" srcset="images/map-desktop@2x.png 2x">
           <source width="768" height="400" type="image/png" media="(min-width: 768px)" src="images/map-tablet@1x.png 1x"
             srcset="images/map-tablet@2x.png 2x">
-          <img class="footer-invitation__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png"
+          <img class="footer-invitation__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x"
             width="320" height="362" alt="Расположение на карте">
         </picture>
       </div>
