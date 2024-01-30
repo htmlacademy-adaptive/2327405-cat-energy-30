@@ -12,7 +12,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -22px;
     left: -73px;
     width: 280px;
     height: 1px;
@@ -46,5 +46,15 @@
     margin: 0;
     padding: 0;
     padding-top: 5px;
+  }
+}
+
+.messengers-list__image{
+  fill:#666666;
+  &:hover{
+    fill: #68b738;
+  }
+  &:active{
+    opacity: 0.3;
   }
 }

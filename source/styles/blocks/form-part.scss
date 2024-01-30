@@ -5,11 +5,47 @@
 }
 
 .form-part--characters {
+
   @media(min-width:$desktop-width) {
     display: flex;
     justify-content: flex-start;
     gap: 56px;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
+  }
+}
+
+.form-part--email {
+  margin-bottom: 11px;
+
+  @media(min-width:$tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-bottom: 51px;
+  }
+}
+
+.form-part--comments {
+  margin-bottom: 24px;
+
+  @media(min-width:$tablet-width) {
+    margin-bottom: 61px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.form-part--additionally {
+  margin-bottom: 23px;
+  @media(min-width:$tablet-width) {
+    margin-bottom: 36px;
+  }
+
+  @media(min-width:$desktop-width) {
+    margin-bottom: 46px;
   }
 }
 
@@ -73,7 +109,7 @@
   }
 
   @media(min-width:$tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 76px;
   }
 
   @media(min-width:$desktop-width) {
@@ -134,7 +170,7 @@
 }
 
 .form-part__legend--more {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 
   &::before {
     content: "";
@@ -146,7 +182,7 @@
     background: #68b738;
 
     @media(min-width:$tablet-width) {
-      top: 23px;
+      top: 22px;
       left: 253px;
       height: 2px;
       width: 446px;
@@ -157,7 +193,7 @@
     }
   }
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -165,18 +201,22 @@
     height: 2px;
     width: 139px;
     background: #68b738;
+
     @media(min-width:$tablet-width) {
-      top:22px;
-      left: -109px;
+      top: 22px;
+      left: -69px;
       width: 30px;
     }
+
     @media(min-width:$desktop-width) {
       width: 68px;
+      top: 23px;
+      left: -108px;
     }
   }
 
   @media(min-width:$tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 56px;
   }
 
   @media(min-width:$desktop-width) {
@@ -203,7 +243,7 @@
     text-transform: uppercase;
     width: 323px;
     margin-left: 51px;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   @media(min-width:$desktop-width) {
@@ -225,7 +265,6 @@
   padding-top: 13px;
   padding-left: 15px;
   box-sizing: border-box;
-  margin-bottom: 26px;
 
   @media(min-width:$tablet-width) {
     width: 628px;
@@ -236,13 +275,11 @@
     margin-left: 50px;
     padding-top: 10px;
     padding-left: 19px;
-    margin-bottom: 60px;
   }
 
   @media(min-width:$desktop-width) {
     margin-left: 90px;
     width: 1220px;
     padding-top: 8px;
-    margin-bottom: 65px;
   }
 }

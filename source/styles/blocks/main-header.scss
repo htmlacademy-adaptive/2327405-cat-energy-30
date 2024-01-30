@@ -1,23 +1,25 @@
 .main-header {
-  margin-bottom: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 10px;
+  padding-left: 1px;
+  padding-right: 1px;
   box-sizing: border-box;
   position: relative;
 
   @media(min-width: $tablet-width) {
+    width: 780px;
     display: flex;
     justify-content: flex-start;
-    gap: 81px;
-    margin-bottom: 51px;
+    gap: 76px;
+    margin-bottom: 60px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media(min-width: $desktop-width) {
+    width: 1443px;
     display: flex;
     justify-content: flex-start;
-    gap: 541px;
+    gap: 542px;
     margin-bottom: 2px;
     padding-left: 110px;
     padding-right: 110px;
@@ -36,10 +38,22 @@
 }
 
 .main-header--form {
+  @media(min-width: $tablet-width) {
+    gap: 80px;
+  }
+  @media(min-width: $desktop-width) {
+    gap: 540px;
+  }
   &::after {
     display: none;
   }
 
+}
+
+.main-header--catalog {
+  @media(min-width: $desktop-width) {
+    gap: 540px;
+  }
 }
 
 .main-header--catalog {
@@ -54,6 +68,21 @@
   vertical-align: top;
 }
 
+.main-header__item--close{
+  display: none;
+}
+
+.main-header__item--open{
+  display: block;
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__item--cross{
+  padding-top: 10px;
+}
+
 .main-header__link--cat-energy {
   margin-top: 10px;
 
@@ -66,28 +95,61 @@
   }
 }
 
-.main-header__catalog {
+.main-header__list {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px 57px;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-
-  .main-header__image--burger {
-    margin-top: 9px;
-  }
+  box-sizing: border-box;
 
   @media(min-width: $tablet-width) {
     width: 187px;
     justify-content: flex-start;
     gap: 13px;
-
-    .main-header__image--burger {
-      display: none;
-    }
   }
 
   @media(min-width: $desktop-width) {
     gap: 13px;
     width: 202px;
   }
+}
+
+.main-header__image--dog{
+margin-left: 19px;
+@media(min-width: $tablet-width) {
+  margin-left: 0;
+}
+&:hover{
+  opacity: 0.8;
+}
+&:active{
+  opacity: 0.6;
+}
+}
+
+.main-header__image--cat-energy{
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+.main-header__image--burger {
+  margin-top: 6px;
+  margin-right: 16px;
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

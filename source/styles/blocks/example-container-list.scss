@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin-bottom: 20px;
   width: 280px;
+  flex-wrap: wrap;
   @media(min-width: $tablet-width){
     width: 367px;
     gap: 43px;
@@ -46,7 +47,7 @@
   line-height: 24px;
   text-align: center;
   margin-bottom: 6px;
-
+  word-wrap: break-word;
   @media(min-width: $tablet-width) {
     font-size: 30px;
     font-style: normal;
@@ -71,6 +72,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 100%;
+  word-wrap: break-word;
   @media(min-width: $tablet-width){
     width: 125px;
     font-size: 14px;

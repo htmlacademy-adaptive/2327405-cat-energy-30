@@ -73,8 +73,8 @@
     content: "";
     left: 99px;
     @media(min-width: $tablet-width){
-      top: 9px;
-      left: 129px;
+      top: 8px;
+      left: calc(100% + 27px);
     }
   }
 }

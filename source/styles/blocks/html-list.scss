@@ -1,7 +1,9 @@
 .html-list {
   @extend %reset;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px 140px  ;
+  flex-wrap: wrap;
   @media(min-width: $tablet-width){
     width: 168px;
     justify-content: flex-end;

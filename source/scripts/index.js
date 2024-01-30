@@ -12,3 +12,26 @@ sliderToggle.addEventListener('click', () => {
     slider.classList.add('slider--after');
 }
 });
+
+const navigation = document.querySelector('.navigation');
+const mainHeaderButton = document.querySelector('.main-header__button');
+const burger = document.querySelector('.main-header__item--open');
+const cross = document.querySelector('.main-header__item--close');
+
+mainHeaderButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  navigation.classList.add('navigation__open');
+});
+
+mainHeaderButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  burger.classList.add('navigation__close');
+});
+
+mainHeaderButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  cross.classList.add('navigation__open');
+});
+
+
+

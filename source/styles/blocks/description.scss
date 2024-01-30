@@ -12,15 +12,18 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -3px;
-    width: 323px;
-    height: 302px;
+    left: 1px;
+    width: 319px;
+    height: calc(100% - 178px);
     background-image: url("../../images/cat-logo-background@2x.png");
+    background-position: -5px 0;
     background-repeat: no-repeat;
+    background-color: rgb(90, 151, 90);
     z-index: -1;
 
     @media(min-width: $tablet-width) {
       background-image: none;
+      background-color: #ffffff;
     }
   }
 
@@ -36,9 +39,9 @@
   @media (min-width: $desktop-width) {
     min-height: 500px;
     background-image: url("../../images/chicken-box-desctop@1x.png");
-    background-position: 556px 0;
+    background-position: 557px 22px;
     padding-left: 190px;
-    margin-bottom: 132px;
+    margin-bottom: 155px;
   }
 }
 
@@ -49,6 +52,7 @@
   text-align: center;
   margin-bottom: 26px;
   color: #ffffff;
+  word-wrap: break-word;
 
   @media(min-width: $tablet-width) {
     color: #000;
@@ -64,7 +68,7 @@
   }
 
   @media(min-width: $desktop-width) {
-    padding-top: 80px;
+    padding-top: 103px;
     width: 416px;
     color: #000;
     font-family: "Oswald", sans-serif;
@@ -86,6 +90,7 @@
   margin-bottom: 302px;
   text-align: center;
   color: #ffffff;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     color: #000000;
