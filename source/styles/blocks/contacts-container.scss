@@ -17,7 +17,7 @@
   @media(min-width: $desktop-width) {
     justify-content: flex-start;
     gap: 82px;
-    padding: 60px 80px;
+    padding: 58px 80px;
     padding-bottom: 58px;
     padding-right: 78px;
     background-color: #fff;
@@ -30,10 +30,33 @@
 
 }
 
+.contacts-container--catalog{
+  @media(min-width: $tablet-width) {
+    padding-top: 34px;
+  }
+  @media(min-width: $desktop-width) {
+    width: 565px;
+    gap: 83px;
+    padding-top: 56px;
+    padding-right: 75px;
+  }
+}
+
+.contacts-container--form{
+  @media(min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+  @media(min-width: $desktop-width) {
+    padding-top: 58px;
+  }
+}
+
 .contacts-container__text {
   @extend %reset;
   width: 140px;
   line-height: 20px;
+  word-wrap: break-word;
+  z-index: 10;
   @media(min-width: $tablet-width) {
     color: var(--special_dark-grey, #444);
     text-align: right;
@@ -43,7 +66,7 @@
     font-weight: 400;
     line-height: 20px;
     width: 157px;
-    padding-top: 1px;
+    padding-top: 3px;
   }
 
   @media(min-width: $desktop-width) {
@@ -66,7 +89,12 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+  word-wrap: break-word;
+  z-index: 10;
   @media(min-width: $tablet-width) {
+    padding-top: 5px;
+    width: 160px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -94,4 +122,10 @@
    display: inline-block;
    margin-top: 18px;
   }
+}
+
+.contacts-container__span--catalog{
+  @media(min-width: $desktop-width) {
+    margin-top: 19px;
+   }
 }

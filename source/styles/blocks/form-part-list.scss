@@ -22,7 +22,7 @@
 
   @media(min-width:$tablet-width) {
     margin-left: 50px;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   @media(min-width:$desktop-width) {
@@ -35,11 +35,11 @@
   @extend %form-paragraph;
   @extend %reset;
   width: 280px;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 
   @media(min-width:$tablet-width) {
     width: 628px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 
   @media(min-width:$desktop-width) {
@@ -87,11 +87,9 @@
 }
 
 .form-part-list--contacts {
-  margin-bottom: 25px;
 
   @media(min-width:$tablet-width) {
     margin-left: 50px;
-    margin-bottom: 64px;
   }
 
   @media(min-width:$desktop-width) {
@@ -100,19 +98,16 @@
     flex-wrap: wrap;
     gap: 58px;
     margin-left: 90px;
-    margin-bottom: 50px;
   }
 }
 
 .form-part-list--more {
-  margin-bottom: 31px;
 
   @media(min-width:$tablet-width) {
     margin-left: 50px;
     display: grid;
     grid-template-columns: 221px 221px;
-    gap: 6px 122px;
-    margin-bottom: 25px;
+    gap: 17px 122px;
   }
 
   @media(min-width:$desktop-width) {
@@ -121,11 +116,11 @@
     flex-wrap: wrap;
     gap: 100px;
     margin-left: 90px;
-    margin-bottom: 33px;
   }
 }
 
 .form-part-list-item--more {
+  margin-bottom: 10px;
   @media(min-width:$desktop-width) {
     width: 225px;
   }
@@ -144,7 +139,7 @@
   margin-bottom: 15px;
 
   @media(min-width:$tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -161,6 +156,14 @@
   }
 }
 
+.form-part-list__label--characters{
+  @media(min-width:$tablet-width) {
+    display: inline-block;
+    vertical-align: top;;
+    padding-top: 1px;
+  }
+}
+
 .form-part-list__input {
   @extend %form-paragraph;
   @extend %reset;
@@ -168,9 +171,19 @@
   padding: 14px 15px 13px;
   box-sizing: border-box;
   position: relative;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid var(--special_grey, #cdcdcd);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
 
   @media(min-width:$tablet-width) {
-    padding: 7px 17px 11px;
+    padding: 9px 17px 11px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -188,9 +201,11 @@
 
   @media(min-width:$tablet-width) {
     width: 566px;
+    padding-top: 11px;
   }
 
   @media(min-width:$desktop-width) {
+    padding-top: 9px;
     width: 509px;
   }
 }
@@ -212,10 +227,14 @@
 
   @media(min-width:$tablet-width) {
     width: 496px;
+    padding-left: 20px;
   }
 
   @media(min-width:$desktop-width) {
     width: 441px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
   }
 }
 
@@ -223,10 +242,14 @@
   padding: 15px 35px 11px 13px;
   width: 216px;
   background-image: url("../../images/icons/email-field.svg");
-  background-position: 184px 12px;
+  background-position: 184px 13px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  border: 1px solid var(--special_grey, #cdcdcd);
+
+  &:focus {
+    background-image: url("../../images/icons/icon_green.svg");
+    border: 2px solid var(--special_dark-grey, #444);
+  }
 
   @media(min-width:$tablet-width) {
     width: 551px;
@@ -249,7 +272,6 @@
   background-position: 166px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  border: 1px solid var(--special_grey, #cdcdcd);
 
   @media(min-width:$tablet-width) {
     width: 530px;
@@ -276,6 +298,20 @@
   padding: 0;
   padding-top: 1px;
   margin-right: 12px;
+  border: none;
+
+  &:hover {
+    background-image: url("../../images/icons/radiobutton_hover.svg");
+    border: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled+.form-part-list__span--radio {
+    opacity: 0.3;
+  }
 
   @media(min-width:$tablet-width) {
     width: 40px;
@@ -291,6 +327,10 @@
 .form-part-list__input--radio:checked {
   background-image: url("../../images/icons/radio-button-checked.svg");
   background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../../images/icons/radio-hover.svg");
+  }
 }
 
 .form-part-list__input--checkbox {
@@ -301,6 +341,46 @@
   background-image: url("../../images/icons/checkbox.svg");
   margin-left: 0;
   margin-right: 11px;
+  border: 2px solid var(--special_dark-grey, #444);
+  position: relative;
+  border: none;
+  outline: none;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -1px;
+    left: -1px;
+    border: 2px solid var(--special_dark-grey, #444);
+    display: none;
+    @media(min-width:$tablet-width) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &:hover{
+    border: none;
+    background-image: url("../../images/icons/checkbox-hover.svg");
+  }
+
+  &:focus{
+    border:none;
+    outline: none;
+  }
+
+  &:focus::before{
+    display: flex;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled+.form-part-list__span--checkbox {
+    opacity: 0.3;
+  }
 
   @media(min-width:$tablet-width) {
     width: 40px;
@@ -311,6 +391,9 @@
 
 .form-part-list__input--checkbox:checked {
   background-image: url("../../images/icons/checkbox-checked.svg");
+  &:hover{
+    background-image: url("../../images/icons/checkbox-hover-checked.svg");
+  }
 }
 
 .form-part-list__span--radio {

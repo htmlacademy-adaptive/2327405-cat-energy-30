@@ -78,15 +78,15 @@
 }
 
 .working-list__item--powder {
-  @media(min-width: $tablet-width){
-    &::after{
-      content: "";
-      position: absolute;
-      background-image: url("../../images/icons/two.svg");
-      top: 39px;
-      left: 124px;
+  @media(min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../images/icons/two.svg");
+        top: 39px;
+        left: 124px;
+      }
     }
-  }
   &::before {
     content: "";
     position: absolute;
@@ -146,6 +146,7 @@
 .working-list__text {
   @extend %reset;
   width: 200px;
+  word-wrap: break-word;
 
   @media(min-width: $tablet-width) {
     color: var(--special_dark-grey, #444);
