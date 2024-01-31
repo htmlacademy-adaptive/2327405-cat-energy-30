@@ -108,6 +108,7 @@
     display: grid;
     grid-template-columns: 221px 221px;
     gap: 17px 122px;
+
   }
 
   @media(min-width:$desktop-width) {
@@ -121,6 +122,10 @@
 
 .form-part-list-item--more {
   margin-bottom: 10px;
+
+  @media(min-width:$tablet-width) {
+    width: 230px;
+  }
   @media(min-width:$desktop-width) {
     width: 225px;
   }

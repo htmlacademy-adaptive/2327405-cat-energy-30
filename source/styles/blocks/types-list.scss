@@ -1,20 +1,17 @@
 .types-list {
   @extend %reset;
-  margin-bottom: 26px;
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
     margin-left: 10px;
-    gap: 77px 60px;
-    margin-bottom: 69px;
+    gap: 71px 60px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     margin-left: 90px;
-    gap: 66px 80px;
-    margin-bottom: 76px;
+    gap: 54px 80px;
   }
 
 }

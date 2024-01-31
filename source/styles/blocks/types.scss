@@ -1,0 +1,9 @@
+.types{
+margin-bottom: 25px;
+@media (min-width: $tablet-width) {
+  margin-bottom: 69px;
+}
+@media (min-width: $desktop-width) {
+  margin-bottom: 75px;
+}
+}
