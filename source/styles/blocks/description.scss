@@ -21,7 +21,7 @@
     background-color: rgb(90, 151, 90);
     z-index: -1;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -30,7 +30,6 @@
     background-image: url("../../images/chicken-box-tablet@1x.png");
     min-height: 790px;
     background-position: 30px 202px;
-    padding-left: 30px;
     padding-right: 30px;
     padding-left: 120px;
   }
@@ -46,16 +45,22 @@
 }
 
 .description__title {
-  @extend %reset;
-  @extend %title;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
   padding-top: 27px;
   text-align: center;
   margin-bottom: 25px;
   color: #ffffff;
   word-wrap: break-word;
 
-  @media(min-width: $tablet-width) {
-    color: #000;
+  @media (min-width: $tablet-width) {
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-style: normal;
@@ -67,10 +72,10 @@
     text-align: left;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 103px;
     width: 416px;
-    color: #000;
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-style: normal;
@@ -81,12 +86,12 @@
 }
 
 .description__text {
-  @extend %reset;
-  margin-bottom: 29px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-family: "Oswald", sans-serif;
   line-height: 14px;
   text-transform: uppercase;
-  color: #000000;
   margin-bottom: 302px;
   text-align: center;
   color: #ffffff;
@@ -106,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: #000;
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-style: normal;

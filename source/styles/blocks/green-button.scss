@@ -13,17 +13,20 @@
   max-width: 280px;
   display: inline-block;
   word-wrap: break-word;
-  &:hover{
+
+  &:hover {
     background-color: #5eaa2f;
   }
-  &:active{
+
+  &:active {
     background-color: #5eaa2f;
   }
-  &:active .green-button--span{
+
+  &:active .green-button__span {
     opacity: 0.3;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -31,7 +34,7 @@
     padding: 15px 28px 14px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +49,6 @@
   background: var(--basic_grey, #f2f2f2);
   color: var(--special_dark-grey, #444444);
   min-width: 280px;
-  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -55,20 +57,22 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  &:hover{
+
+  &:hover {
     background-color: #ebebeb;
   }
-  @media(min-width: $tablet-width){
+
+  @media (min-width: $tablet-width) {
     min-width: 250px;
   }
-  @media(min-width: $desktop-width){
+
+  @media (min-width: $desktop-width) {
     min-width: 169px;
   }
 }
 
 .green-button--order {
   min-width: 280px;
-  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -78,20 +82,23 @@
   line-height: 20px;
   text-transform: uppercase;
   box-sizing: border-box;
-  @media(min-width: $tablet-width){
+
+  @media (min-width: $tablet-width) {
     min-width: 250px;
   }
-  @media(min-width: $desktop-width){
+
+  @media (min-width: $desktop-width) {
     min-width: 169px;
   }
 }
 
-.green-button--more-order{
-  @media(min-width: $tablet-width){
+.green-button--more-order {
+  @media (min-width: $tablet-width) {
     padding-left: 24px;
     min-width: 632px;
   }
-  @media(min-width: $desktop-width){
+
+  @media (min-width: $desktop-width) {
     min-width: 244px;
     align-self: flex-start;
   }

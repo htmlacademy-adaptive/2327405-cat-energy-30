@@ -1,6 +1,7 @@
-.footer-invitation-container{
+.footer-invitation-container {
   position: relative;
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     width: 57px;
@@ -9,17 +10,18 @@
     background-repeat: no-repeat;
     top: 138px;
     left: 134px;
-    @media(min-width: $tablet-width){
+
+    @media (min-width: $tablet-width) {
       width: 113px;
       height: 106px;
       top: 146px;
       left: 333px;
       background-image: url("../../images/map-marker-tablet@2x.png");
     }
-    @media(min-width: $desktop-width){
+
+    @media (min-width: $desktop-width) {
       top: 131px;
       left: 909px;
     }
   }
-
 }

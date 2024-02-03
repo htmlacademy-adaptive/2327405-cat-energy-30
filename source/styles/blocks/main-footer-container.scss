@@ -1,23 +1,23 @@
 .main-footer-container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
     gap: 161px;
   }
 
-  @media(min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
 }
 
 .main-footer-container__small {
-  @media(min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 420px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 676px;
@@ -27,15 +27,16 @@
 .main-footer-container__logo {
   margin-left: 77px;
   margin-bottom: 36px;
-  &:hover{
+
+  &:hover {
     opacity: 0.8;
   }
 
-  &:active{
+  &:active {
     opacity: 0.6;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding-top: 5px;
   }

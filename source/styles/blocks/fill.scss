@@ -1,6 +1,7 @@
-.fill{
+.fill {
   margin-bottom: 21px;
-  @media(min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 57px;
   }
 }
