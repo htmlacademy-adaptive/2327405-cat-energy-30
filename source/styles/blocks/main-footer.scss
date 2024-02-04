@@ -1,23 +1,33 @@
-.main-footer{
+.main-footer {
   position: relative;
   background-color: #f2f2f2;
   padding-top: 26px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding-top: 23px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-top: 0;
   }
 }
 
-.main-footer--index{
-  &::before{
-    content:"";
+.main-footer--index {
+  &::before {
+    content: "";
     position: absolute;
     width: 100%;
-    height: calc(100% - 545px);
+    height: calc(100% - 603px);
     top: 0;
     left: 0;
     background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      height: calc(100% - 547px);
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }

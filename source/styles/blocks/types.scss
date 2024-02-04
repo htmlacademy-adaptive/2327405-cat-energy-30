@@ -1,9 +1,16 @@
-.types{
-margin-bottom: 25px;
-@media (min-width: $tablet-width) {
-  margin-bottom: 69px;
-}
-@media (min-width: $desktop-width) {
-  margin-bottom: 75px;
-}
+.types {
+  width: 320px;
+  margin: 0 auto 25px;
+  padding-left: 41px;
+
+  @media (min-width: $tablet-width) {
+    width: 710px;
+    margin: 0 auto 70px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto 75px;
+  }
 }

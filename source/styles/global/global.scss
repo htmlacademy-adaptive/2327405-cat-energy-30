@@ -9,15 +9,13 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 13px;
-  width: 320px;
+
   @media (min-width: $tablet-width) {
-      width: 768px;
-      padding-top: 25px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-      width: 1440px;
-      padding-top: 55px;
+    padding-top: 55px;
   }
 }
 

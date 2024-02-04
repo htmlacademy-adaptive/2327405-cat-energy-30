@@ -1,65 +1,89 @@
 .main-header {
-  margin-bottom: 10px;
   padding-left: 1px;
   padding-right: 1px;
   box-sizing: border-box;
   position: relative;
   z-index: 30;
+  width: 280px;
+  margin: 0 auto 10px;
 
-  @media(min-width: $tablet-width) {
-    width: 780px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 76px;
-    margin-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (min-width: $tablet-width) {
+    width: 715px;
+    margin: 0 auto 60px;
   }
 
-  @media(min-width: $desktop-width) {
-    width: 1443px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 542px;
-    margin-bottom: 2px;
-    padding-left: 110px;
-    padding-right: 110px;
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 0;
 
     &::after {
       content: "";
       position: absolute;
-      width: 720px;
+      width: 50%;
       height: 694px;
       background-image: url("../../images/big-cat-logo-background@1x.png");
+      background-repeat: no-repeat;
       top: -55px;
-      left: 720px;
       z-index: -1;
+      background-color: #62a63b;
+      right: 0;
+      background-position: right top;
     }
   }
 }
 
+.main-header__big-container {
+  @media (min-width: $tablet-width) {
+    width: 715px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 76px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1226px;
+    margin: 0 auto 2px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 542px;
+    padding-left: 111px;
+    padding-right: 107px;
+  }
+}
+
+.main-header__big-container--form {
+  @media (min-width: $tablet-width) {
+    gap: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 113px;
+    gap: 541px;
+  }
+}
+
 .main-header--form {
-  @media(min-width: $tablet-width) {
-    gap: 80px;
+  @media (min-width: $tablet-width) {
+    gap: 81px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     gap: 540px;
   }
+
   &::after {
     display: none;
-  }
-
-}
-
-.main-header--catalog {
-  @media(min-width: $desktop-width) {
-    gap: 540px;
   }
 }
 
 .main-header--catalog {
   &::after {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 540px;
   }
 }
 
@@ -69,29 +93,30 @@
   vertical-align: top;
 }
 
-.main-header__item--close{
+.main-header__item--close {
   display: none;
 }
 
-.main-header__item--open{
+.main-header__item--open {
   display: block;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-header__item--cross{
+.main-header__item--cross {
   padding-top: 10px;
 }
 
 .main-header__link--cat-energy {
   margin-top: 10px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 15px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 19px;
   }
 }
@@ -107,36 +132,44 @@
   flex-wrap: wrap;
   box-sizing: border-box;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 187px;
     justify-content: flex-start;
     gap: 13px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     gap: 13px;
     width: 202px;
   }
 }
 
-.main-header__image--dog{
-margin-left: 19px;
-@media(min-width: $tablet-width) {
-  margin-left: 0;
-}
-&:hover{
-  opacity: 0.8;
-}
-&:active{
-  opacity: 0.6;
-}
+.main-header__list--form {
+  @media (min-width: $tablet-width) {
+    gap: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
 
-.main-header__image--cat-energy{
-  &:hover{
+.main-header__image--dog {
+  &:hover {
     opacity: 0.8;
   }
-  &:active{
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__image--cat-energy {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
     opacity: 0.6;
   }
 }
@@ -144,25 +177,27 @@ margin-left: 19px;
 .main-header__image--burger {
   margin-top: 6px;
   margin-right: 16px;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-header__button{
+.main-header__button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .main-header__item--burger,
-.main-header__item--cross{
+.main-header__item--cross {
   display: none;
 }
 
-.main-header__item--show{
+.main-header__item--show {
   display: block;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

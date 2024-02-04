@@ -1,8 +1,10 @@
 .navigation {
-  @extend %reset;
-  display: none;
+  padding: 0;
+  list-style: none;
+  width: 320px;
+  margin: 0 auto;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 445px;
     display: flex;
     justify-content: flex-start;
@@ -11,7 +13,7 @@
     padding-top: 14px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -24,14 +26,18 @@
 }
 
 .navigation--catalog {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     gap: 33px;
     margin-top: 21px;
   }
 }
 
 .navigation--form {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    gap: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
     gap: 33px;
   }
 }
@@ -42,70 +48,73 @@
   background-color: #ffffff;
   width: 100%;
   top: 44px;
-  left: 0;
+  left: -20px;
 }
 
 .navigation__close {
   display: none;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .navigation__item {
-  width: 25px;
+  width: 320px;
   text-align: center;
   position: relative;
+  background-color: #ffffff;
 
   &::before {
     content: "";
     position: absolute;
-    min-width: 320px;
+    min-width: 100%;
     height: 1px;
     background-color: #e6e6e6;
-    top: 9px;
+    top: 8px;
     left: 0;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
-  &.navigation__item:last-child {
-    &::after {
-      content: "";
-      position: absolute;
-      min-width: 320px;
-      height: 1px;
-      background-color: #e6e6e6;
-      top: 66px;
-      left: 0;
-
-      @media(min-width: $tablet-width) {
-        display: none;
-      }
-    }
-  }
-
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 155px;
     padding: 0;
     text-align: center;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 170px;
     padding: 0;
     text-align: left;
+    background-color: transparent;
+  }
+}
+
+.navigation__item:last-child {
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 66px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .navigation__item--main {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 64px;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 72px;
   }
 }
@@ -126,14 +135,16 @@
   padding-right: 37px;
   padding-bottom: 14px;
   box-sizing: border-box;
-  &:hover{
+
+  &:hover {
     opacity: 0.6;
   }
-  &:active{
+
+  &:active {
     opacity: 0.3;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -141,14 +152,14 @@
     max-width: 153px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     max-width: 170px;
     padding: 0;
-    color: #ffffff
+    color: #ffffff;
   }
 }
 
@@ -158,8 +169,9 @@
 
 .navigation__link--current {
   position: relative;
-  @media(min-width: $tablet-width) {
-    &::before{
+
+  @media (min-width: $tablet-width) {
+    &::before {
       content: "";
       position: absolute;
       top: 30px;
@@ -168,41 +180,43 @@
       height: 2px;
       background: #68b738;
     }
-    @media(min-width: $desktop-width) {
-      &::before{
-        top:32px;
-      }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 32px;
     }
   }
 }
 
-.navigation__link--current-index{
-  @media(min-width: $tablet-width) {
-    &::before{
+.navigation__link--current-index {
+  @media (min-width: $tablet-width) {
+    &::before {
       top: 32px;
     }
   }
-  @media(min-width: $desktop-width) {
-    &::before{
+
+  @media (min-width: $desktop-width) {
+    &::before {
       background-color: #ffffff;
     }
   }
 }
 
-.navigation__link--current-catalog{
-  @media(min-width: $desktop-width) {
-    &::before{
-      top:30px;
+.navigation__link--current-catalog {
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 30px;
     }
   }
 }
 
 .navigation__link--main {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 64px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 69px;
   }
 }

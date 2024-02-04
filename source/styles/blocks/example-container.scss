@@ -1,19 +1,21 @@
 .example-container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
-    gap:122px;
-    margin-bottom: 80px;
+    gap: 122px;
+    margin-bottom: 78px;
   }
 
-    @media(min-width: $desktop-width){
-      display: block;
-      margin-bottom: 0;
-    }
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 
 .example-container__text {
-  @extend %reset;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-family: "Oswald", sans-serif;
   margin-left: 47px;
   font-size: 14px;
@@ -24,29 +26,29 @@
   color: #000000;
   margin-bottom: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 10px;
     font-size: 20px;
     margin-bottom: 0;
-
   }
 
-  @media(min-width: $desktop-width){
-   text-align: left;
-   margin-left: 0;
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 0;
   }
 }
 
 .example-container__span {
   margin-left: 5px;
-  @media(min-width:$tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: block;
     text-align: end;
     margin-top: 9px;
   }
 
-    @media(min-width:$desktop-width){
-      display: inline-block;
-      margin-left: 66px;
-    }
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 66px;
+  }
 }

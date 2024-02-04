@@ -1,12 +1,11 @@
 .description {
-  margin-bottom: 19px;
   background-image: url("../../images/chicken-box-mobile@1x.png");
   background-repeat: no-repeat;
   min-height: 400px;
   background-position: 20px calc(100% - 43px);
-  padding-left: 20px;
-  padding-right: 20px;
   position: relative;
+  width: 320px;
+  margin: 0 auto 20px;
 
   &::before {
     content: "";
@@ -21,41 +20,51 @@
     background-color: rgb(90, 151, 90);
     z-index: -1;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../../images/chicken-box-tablet@1x.png");
+    width: 710px;
+    margin: 0 auto 21px;
     min-height: 790px;
-    background-position: 30px 202px;
-    padding-left: 30px;
+    background-position: 1px 201px;
     padding-right: 30px;
-    padding-left: 120px;
+    padding-left: 91px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     min-height: 500px;
     background-image: url("../../images/chicken-box-desctop@1x.png");
-    background-position: 557px 22px;
-    padding-left: 190px;
+    background-position: 448px 22px;
+    padding-left: 80px;
     margin-bottom: 155px;
     z-index: 50;
   }
 }
 
 .description__title {
-  @extend %reset;
-  @extend %title;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
   padding-top: 27px;
   text-align: center;
   margin-bottom: 25px;
   color: #ffffff;
   word-wrap: break-word;
 
-  @media(min-width: $tablet-width) {
-    color: #000;
+  @media (min-width: $tablet-width) {
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-style: normal;
@@ -67,10 +76,10 @@
     text-align: left;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 103px;
     width: 416px;
-    color: #000;
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-style: normal;
@@ -81,12 +90,12 @@
 }
 
 .description__text {
-  @extend %reset;
-  margin-bottom: 29px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-family: "Oswald", sans-serif;
   line-height: 14px;
   text-transform: uppercase;
-  color: #000000;
   margin-bottom: 302px;
   text-align: center;
   color: #ffffff;
@@ -106,7 +115,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: #000;
+    width: 300px;
+    color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -114,5 +124,13 @@
     line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 52px;
+  }
+}
+
+.description__button {
+  margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }

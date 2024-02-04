@@ -33,5 +33,3 @@ mainHeaderButtons.forEach((item) => {
     cross.classList.toggle('main-header__item--show');
   })
 });
-
-

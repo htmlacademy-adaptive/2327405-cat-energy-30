@@ -1,12 +1,15 @@
 .filter__text {
-  @extend %reset;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   color: #000000;
   margin-bottom: 31px;
   text-align: center;
   width: 161px;
   word-wrap: break-word;
   margin-left: 59px;
-  @media(min-width:$tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: 180px;
     font-size: 16px;
     font-style: normal;
@@ -15,34 +18,45 @@
     padding-top: 17px;
     margin-left: 0;
   }
-  @media(min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-top: 18px;
   }
 }
 
-.filter__button{
+.filter__button {
   border: none;
   min-width: 280px;
   margin-bottom: 20px;
-  @media(min-width:$tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-left: 51px;
     margin-bottom: 21px;
     min-width: 282px;
     align-self: flex-start;
   }
-  @media(min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     min-width: 570px;
+    margin-left: 0;
   }
 }
 
-.filter__bottom-container{
-  @media(min-width:$tablet-width) {
+.filter__bottom-container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 769px;
     display: flex;
     justify-content: flex-start;
-    gap:57px;
+    gap: 57px;
   }
-  @media(min-width:$desktop-width) {
-    margin-left: 39px;
-    gap:76px
+
+  @media (min-width: $desktop-width) {
+    width: 1219px;
+    gap: 76px;
+    padding-left: 0;
   }
 }
