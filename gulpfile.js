@@ -15,8 +15,10 @@ import browserslistToEsbuild from 'browserslist-to-esbuild';
 import sharp from 'gulp-sharp-responsive';
 import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
+import svgstore from 'gulp-svgstore';
 import server from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
+import rename from 'gulp-rename';
 
 const { src, dest, watch, series, parallel } = gulp;
 const sass = gulpSass(dartSass);
@@ -113,8 +115,18 @@ export function optimizeVector () {
 }
 
 export function createStack () {
-  return src(`${PATH_TO_SOURCE}images/icons/**/*.svg`)
+  return src(`${PATH_TO_SOURCE}images/stack/**/*.svg`)
     .pipe(stacksvg())
+    .pipe(dest(`${PATH_TO_DIST}images/icons`));
+}
+
+export function createSprite () {
+  return src(`${PATH_TO_SOURCE}images/sprite/**/*.svg`)
+    // .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
     .pipe(dest(`${PATH_TO_DIST}images/icons`));
 }
 
@@ -168,6 +180,7 @@ export function startServer () {
   watch(`${PATH_TO_SOURCE}styles/**/*.scss`, series(processStyles));
   watch(`${PATH_TO_SOURCE}scripts/**/*.js`, series(processScripts));
   watch(`${PATH_TO_SOURCE}images/icons/**/*.svg`, series(createStack, reloadServer));
+  watch(`${PATH_TO_SOURCE}images/sprite/**/*.svg`, series(createSprite, reloadServer));
   watch(PATHS_TO_STATIC, series(copyAssets, reloadServer));
 }
 
@@ -193,6 +206,7 @@ export function buildProd (done) {
       processStyles,
       processScripts,
       createStack,
+      createSprite,
       copyAssets,
     ),
   )(done);
@@ -206,6 +220,7 @@ export function runDev (done) {
       processStyles,
       processScripts,
       createStack,
+      createSprite
     ),
     startServer,
   )(done);

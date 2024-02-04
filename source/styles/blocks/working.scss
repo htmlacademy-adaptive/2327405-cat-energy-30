@@ -1,17 +1,22 @@
 .working {
-  margin-bottom: 50px;
+  width: 280px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 2px;
+  margin: 0 auto 50px;
 
   @media (min-width: $tablet-width) {
+    width: 710px;
+    margin: 0 auto;
     margin-bottom: 67px;
-    padding-left: 30px;
+    padding-left: 23px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 45px;
-    padding-left: 110px;
+    padding-left: 102px;
     padding-right: 102px;
   }
 }

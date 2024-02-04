@@ -1,12 +1,18 @@
 .main-footer-messengers {
+  width: 320px;
+  margin: 0 auto;
   padding: 35px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
     padding: 52px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 64px 110px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 64px 0;
   }
 }

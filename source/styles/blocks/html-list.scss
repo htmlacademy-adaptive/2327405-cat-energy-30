@@ -21,6 +21,14 @@
   font-size: 16px;
   text-decoration: none;
   color: #444444;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .html-list__text {
@@ -38,14 +46,14 @@
   }
 }
 
-.html-list__image {
-  fill: #666666;
+// .html-list__image {
 
-  &:hover {
-    fill: #68b738;
-  }
 
-  &:active {
-    opacity: 0.3;
-  }
-}
+//   &:hover {
+//     fill: #68b738;
+//   }
+
+//   &:active {
+//     opacity: 0.3;
+//   }
+// }

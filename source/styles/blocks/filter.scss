@@ -42,13 +42,19 @@
 }
 
 .filter__bottom-container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 40px;
+
   @media (min-width: $tablet-width) {
+    width: 769px;
     display: flex;
     justify-content: flex-start;
     gap: 57px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1219px;
     margin-left: 39px;
     gap: 76px;
   }

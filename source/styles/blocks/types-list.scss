@@ -6,14 +6,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    margin-left: 10px;
+    margin-left: 0;
     gap: 70px 60px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
-    margin-left: 90px;
+    margin-left: 0;
     gap: 54px 80px;
   }
 }

@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    padding: 0 37px 40px;
+    padding: 0 38px 40px;
     box-sizing: border-box;
     background-color: #f2f2f2;
     position: relative;
@@ -226,7 +226,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 90px;
+    margin-bottom: 92px;
   }
 }
 
@@ -263,7 +263,7 @@
   width: 140px;
   display: flex;
   justify-content: flex-start;
-  gap: 10px 56px;
+  gap: 10px 54px;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
@@ -275,7 +275,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 25px;
+      top: 23px;
       left: 0;
       width: 250px;
       height: 1px;

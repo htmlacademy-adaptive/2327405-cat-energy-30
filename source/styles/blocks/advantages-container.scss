@@ -1,5 +1,15 @@
 .advantages-container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 710px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }

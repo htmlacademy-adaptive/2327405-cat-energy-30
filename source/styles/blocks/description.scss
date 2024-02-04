@@ -1,12 +1,11 @@
 .description {
-  margin-bottom: 19px;
   background-image: url("../../images/chicken-box-mobile@1x.png");
   background-repeat: no-repeat;
   min-height: 400px;
   background-position: 20px calc(100% - 43px);
-  padding-left: 20px;
-  padding-right: 20px;
   position: relative;
+  width: 320px;
+  margin: 0 auto 20px;
 
   &::before {
     content: "";
@@ -28,17 +27,22 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../images/chicken-box-tablet@1x.png");
+    width: 710px;
+    margin: 0 auto 21px;
     min-height: 790px;
-    background-position: 30px 202px;
+    background-position: 1px 201px;
     padding-right: 30px;
-    padding-left: 120px;
+    padding-left: 91px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     min-height: 500px;
     background-image: url("../../images/chicken-box-desctop@1x.png");
-    background-position: 557px 22px;
-    padding-left: 190px;
+    background-position: 448px 22px;
+    padding-left: 80px;
     margin-bottom: 155px;
     z-index: 50;
   }
@@ -111,6 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 300px;
     color: #000000;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -119,5 +124,13 @@
     line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 52px;
+  }
+}
+
+.description__button {
+  margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }

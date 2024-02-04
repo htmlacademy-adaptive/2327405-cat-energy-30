@@ -53,11 +53,17 @@
   }
 }
 
-.messengers-list__image {
-  fill: #666666;
+.messengers-list__link {
+  color: #666666;
 
   &:hover {
-    fill: #68b738;
+    color: #68b738;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+    color: #68b738;
   }
 
   &:active {

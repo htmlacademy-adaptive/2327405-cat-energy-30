@@ -1,15 +1,69 @@
 .additionally {
   margin-bottom: 36px;
+  padding-left: 42px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 449px;
+    height: 2px;
+    background: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: 379px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 508px;
+      top: 23px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -748px;
+      height: 2px;
+      background: #68b738;
+      transform: rotate(360deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -1390px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 718px;
-    padding-left: 11px;
+    padding-left: 5px;
     box-sizing: border-box;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+
+.additionally__all-container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+    margin: 0 auto;
+    padding-left: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 0;
   }
 }
 
@@ -18,7 +72,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 79px;
-    margin-bottom: 0;
   }
 }
 
@@ -33,57 +86,21 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
-  margin-bottom: 48px;
-  position: relative;
+  margin-bottom: 47px;
 
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: 246px;
-    width: 54px;
-    height: 2px;
-    background: #68b738;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-      left: 379px;
-      width: 319px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 951px;
-    }
-  }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -70px;
-      width: 30px;
-      height: 2px;
-      background: #68b738;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: -109px;
-      width: 68px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto 78px;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
     margin-left: 39px;
-    margin-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 79px;
+    width: 1220px;
+    margin: 0 auto 81px;
   }
 }

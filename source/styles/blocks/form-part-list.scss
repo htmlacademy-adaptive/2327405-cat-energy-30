@@ -23,12 +23,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    margin-left: 0;
     margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 91px;
     margin-bottom: 0;
   }
 }
@@ -76,7 +75,7 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    margin-left: 50px;
+    margin-left: 0;
     padding-left: 26px;
     padding-top: 16px;
     padding-bottom: 21px;
@@ -97,22 +96,19 @@
 }
 
 .form-part-list--contacts {
-  @media (min-width: $tablet-width) {
-    margin-left: 50px;
-  }
-
   @media (min-width: $desktop-width) {
+    width: 1277px;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 58px;
-    margin-left: 90px;
   }
 }
 
 .form-part-list--more {
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    margin-left: 0;
     display: grid;
     grid-template-columns: 221px 221px;
     gap: 17px 122px;
@@ -123,7 +119,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 100px;
-    margin-left: 90px;
+    margin-left: 0;
   }
 }
 

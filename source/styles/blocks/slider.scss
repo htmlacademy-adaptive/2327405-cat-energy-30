@@ -48,14 +48,18 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 147px;
+      height: 150px;
       background-color: #ffffff;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      height: 136px;
+      height: 137px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #f2f2f2;
   }
 }
 
@@ -78,14 +82,18 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 147px;
+      height: 150px;
       background-color: #ffffff;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      height: 136px;
+      height: 137px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #f2f2f2;
   }
 }
 

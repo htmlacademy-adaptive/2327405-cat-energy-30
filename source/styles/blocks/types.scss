@@ -1,11 +1,16 @@
 .types {
-  margin-bottom: 25px;
+  width: 320px;
+  margin: 0 auto 26px;
+  padding-left: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    width: 710px;
+    margin: 0 auto 70px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    width: 1220px;
+    margin: 0 auto 75px;
   }
 }
