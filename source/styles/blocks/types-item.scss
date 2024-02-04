@@ -53,8 +53,15 @@
   }
 }
 
+.types-item--big-chicken{
+  padding-bottom: 23px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
 .types-item--plus {
-  padding-top: 23px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -263,7 +270,7 @@
   width: 140px;
   display: flex;
   justify-content: flex-start;
-  gap: 10px 54px;
+  gap: 10px 55px;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {

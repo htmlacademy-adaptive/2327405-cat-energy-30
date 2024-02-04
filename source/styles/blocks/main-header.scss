@@ -9,34 +9,57 @@
 
   @media (min-width: $tablet-width) {
     width: 715px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 76px;
     margin: 0 auto 60px;
-    padding-left: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1443px;
+    width: 100%;
+    margin-bottom: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      background-image: url("../../images/big-cat-logo-background@1x.png");
+      background-repeat: no-repeat;
+      top: -55px;
+      z-index: -1;
+      background-color: #62a63b;
+      right: 0;
+      background-position: right top;
+    }
+  }
+}
+
+.main-header__big-container {
+  @media (min-width: $tablet-width) {
+    width: 715px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 76px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1226px;
     margin: 0 auto 2px;
     display: flex;
     justify-content: flex-start;
     gap: 542px;
     padding-left: 111px;
-    padding-right: 110px;
+    padding-right: 107px;
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 694px;
-      background-image: url("../../images/big-cat-logo-background@1x.png");
-      background-repeat: no-repeat;
-      top: -55px;
-      left: 720px;
-      z-index: -1;
-      background-color: #68b738;
-    }
+.main-header__big-container--form {
+  @media (min-width: $tablet-width) {
+    gap: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 113px;
+    gap: 541px;
   }
 }
 
@@ -123,7 +146,7 @@
 
 .main-header__list--form {
   @media (min-width: $tablet-width) {
-    gap: 16px;
+    gap: 14px;
   }
 
   @media (min-width: $desktop-width) {
