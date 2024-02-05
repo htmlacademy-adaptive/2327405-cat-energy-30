@@ -53,8 +53,9 @@
   }
 }
 
-.types-item--big-chicken{
+.types-item--big-chicken {
   padding-bottom: 23px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
   }
@@ -315,4 +316,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.types-item__title-link {
+  text-decoration: none;
 }
